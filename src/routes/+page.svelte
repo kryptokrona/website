@@ -30,6 +30,5 @@
 <Grid variant={1}/>
 <Statusbar />
 <Grid variant={2}/>
-<Faq />
 <LatestPosts posts={posts.data}/>
 <Signup/>
