@@ -1,6 +1,15 @@
+<script lang="ts">
+
+  import {getAssetURL} from "$lib/utils/getAssets";
+
+  export let data
+
+  console.log(data)
+</script>
+
 <article class="flex flex-col items-start justify-between">
   <div class="relative w-full">
-    <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+    <img src="{getAssetURL(data.thumbnail)}" alt="" class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
     <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
   </div>
   <div class="max-w-xl">
@@ -10,12 +19,12 @@
     </div>
     <div class="group relative">
       <h3 class="mt-3 text-lg font-semibold leading-6 text-stone-900 dark:text-stone-200 group-hover:text-gray-600">
-        <a href="#">
+        <a href="/blog/{data.slug}">
           <span class="absolute inset-0"></span>
-          Boost your conversion rate
+          {data.title}
         </a>
       </h3>
-      <p class="mt-5 line-clamp-3 text-sm leading-6 text-stone-600 dark:text-stone-400">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+      <p class="mt-5 line-clamp-3 text-sm leading-6 text-stone-600 dark:text-stone-400">{data.summary}</p>
     </div>
   </div>
 </article>

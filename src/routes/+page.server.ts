@@ -1,12 +1,13 @@
 import { getDirectusClient } from '../lib/utils/directus';
 
+/** @type {import('./$types').Actions} */
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();
 
 		const directus = await getDirectusClient();
 
-		await directus.items('contact').createOne({
+		await directus.items('signups').createOne({
 			email: data.get('email') ?? ''
 		});
 

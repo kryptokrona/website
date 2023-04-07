@@ -8,7 +8,7 @@
   })
 </script>
 
-<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2">
+<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 my-16">
   <div>
     {#if supply}
       <p in:fade={{delay: 500}} class="text-neutral-500 mb-1.5 tracking-tight text-end md:text-start">SUPPLY</p>

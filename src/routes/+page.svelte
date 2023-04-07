@@ -3,6 +3,11 @@
   import LatestPosts from "$lib/components/blog/LatestPosts.svelte";
   import Grid from "$lib/components/Grid.svelte";
   import Statusbar from "$lib/components/Statusbar.svelte";
+  import Faq from "$lib/components/faq/Faq.svelte";
+
+  export let data
+  const { posts } = data
+
 </script>
 
 <div class="relative isolate">
@@ -25,5 +30,6 @@
 <Grid variant={1}/>
 <Statusbar />
 <Grid variant={2}/>
-<LatestPosts />
+<Faq />
+<LatestPosts posts={posts.data}/>
 <Signup/>

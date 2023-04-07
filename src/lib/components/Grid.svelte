@@ -137,7 +137,7 @@
 		</div>
 	</div>
 {:else if variant === 2}
-	<div class="max-w-6xl mx-auto pt-6 px-4 xl:px-2">
+	<div class="max-w-6xl mx-auto mt-6 px-4 xl:px-2">
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<div
 				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"

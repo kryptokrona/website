@@ -1,5 +1,9 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+  /** @type {import('./$types').PageData} */
+  export let data;
+  /** @type {import('./$types').ActionData} */
+  export let form;
 </script>
 
 <div class="max-w-6xl mx-auto xl:px-2">
