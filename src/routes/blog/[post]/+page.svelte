@@ -26,8 +26,8 @@
 </svelte:head>
 
 <div class="h-full w-full overflow-y-scroll pb-16 pt-16">
-  <div class="text-white mx-auto max-w-md sm:max-w-3xl lg:max-w-5xl p-4 sm:mt-0 sm:p-8">
-    <article class="mx-auto prose prose-invert prose-sm">
+  <div class="text-white p-4 sm:mt-0 sm:p-8">
+    <article class="mx-auto prose prose-invert prose-sm max-w-4xl">
       <p class="text-sm text-zinc-500">{getPostDate(data.extra.date_created)}</p>
       {@html data.content}
     </article>

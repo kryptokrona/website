@@ -6,9 +6,9 @@
   export let form;
 </script>
 
-<div class="max-w-6xl mx-auto xl:px-2">
+<div class="border-t dark:border-neutral-50/10 border-neutral-300 mt-16 sm:mt-24 sm:mt-24 xl:mt-32">
 	<div
-		class=" relative isolate overflow-hidden dark:bg-neutral-800 bg-neutral-50 px-6 py-16 sm:py-24 xl:shadow-xl xl:rounded-lg sm:px-24 xl:py-32 xl:border xl:dark:border-neutral-700/50 border-neutral-300"
+		class="xl:px-2 max-w-6xl mx-auto relative isolate overflow-hidden px-6 py-16 sm:py-24 sm:px-24 xl:py-32"
 	>
 		<h2
 			class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight dark:text-white sm:text-4xl"
