@@ -14,4 +14,3 @@
 <Timeline />
 <Statusbar />
 <Faq />
-<Signup />

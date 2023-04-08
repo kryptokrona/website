@@ -31,4 +31,3 @@
 <Grid />
 <Statusbar />
 <!--<LatestPosts posts={posts.data}/>-->
-<Signup/>
