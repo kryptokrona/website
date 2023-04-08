@@ -12,7 +12,7 @@
 
 <div class="relative isolate">
   <div class="mx-auto max-w-6xl py-32 sm:py-36 lg:py-40 px-4 xl:px-2">
-    <div class="hidden sm:mb-8 sm:flex sm:justify-start">
+    <div class="flex mb-8 justify-start">
       <LastBlock />
     </div>
     <div>
