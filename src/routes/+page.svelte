@@ -3,7 +3,7 @@
   import LatestPosts from "$lib/components/blog/LatestPosts.svelte";
   import Grid from "$lib/components/Grid.svelte";
   import Statusbar from "$lib/components/Statusbar.svelte";
-  import Faq from "$lib/components/faq/Faq.svelte";
+  import LastBlock from "$lib/components/LastBlock.svelte";
 
   export let data
   const { posts } = data
@@ -11,11 +11,9 @@
 </script>
 
 <div class="relative isolate">
-  <div class="mx-auto max-w-6xl pt-32 sm:pt-36 lg:pt-40 px-4 xl:px-2">
+  <div class="mx-auto max-w-6xl py-32 sm:py-36 lg:py-40 px-4 xl:px-2">
     <div class="hidden sm:mb-8 sm:flex sm:justify-start">
-      <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-stone-50/10 hover:ring-stone-50/20">
-        What is kryptokrona? <a href="#" class="font-semibold text-blue-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-      </div>
+      <LastBlock />
     </div>
     <div>
       <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">Fix our money, better our future.</h1>
@@ -27,6 +25,7 @@
     </div>
   </div>
 </div>
+
 <Grid variant={1}/>
 <Statusbar />
 <Grid variant={2}/>

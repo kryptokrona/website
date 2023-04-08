@@ -19,7 +19,7 @@
     </div>
     <div class="group relative">
       <h3 class="mt-3 text-lg font-semibold leading-6 text-stone-900 dark:text-stone-200 group-hover:text-gray-600">
-        <a href="/blog/{data.slug}">
+        <a data-sveltekit-preload-data href="/blog/{data.slug}">
           <span class="absolute inset-0"></span>
           {data.title}
         </a>

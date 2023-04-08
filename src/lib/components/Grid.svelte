@@ -6,7 +6,7 @@
 	<div class="max-w-6xl mx-auto pt-16 px-4 xl:px-2">
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<div
-				class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+				class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md "
 			>
 				<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 					<svg
@@ -26,7 +26,7 @@
 
 					Get rewarded
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Become part of our thriving mining community and leverage your computer's processing power
 					to validate transactions, boost network security, and generate a steady stream of income.
 				</p>
@@ -51,13 +51,13 @@
 					</svg>
 					Be your own bank
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Kryptokrona offers easy and safe ways to manage your money, helping you rely less on
 					traditional banks and giving you more control over your financial life.
 				</p>
 			</div>
 			<div
-				class="p-4 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+				class="p-4  dark:bg-neutral-800 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
 			>
 				<div>
 					<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
@@ -77,7 +77,7 @@
 						</svg>
 						Software
 					</h2>
-					<p class="dark:text-neutral-300 mt-2 mb-4">
+					<p class="dark:text-neutral-400 mt-2 mb-4">
 						Here's a list of tools and apps being built, feel free to contribute or test it out!
 					</p>
 				</div>
@@ -102,7 +102,7 @@
 					</svg>
 					Communicate privately
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Our blockchain-based messenger ensures secure, private, and encrypted peer-to-peer
 					communication, keeping your sensitive data and personal information safe from prying eyes.
 				</p>
@@ -128,7 +128,7 @@
 
 					Contribute
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					We wholeheartedly welcome contributors who share our passion for innovation,
 					decentralization, and the desire to make a difference in the rapidly evolving world of
 					cryptocurrency.
@@ -137,7 +137,7 @@
 		</div>
 	</div>
 {:else if variant === 2}
-	<div class="max-w-6xl mx-auto mt-6 px-4 xl:px-2">
+	<div class="max-w-6xl mx-auto px-4 xl:px-2 mt-32 sm:mt-36 lg:mt-40">
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<div
 				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
@@ -160,7 +160,7 @@
 						</svg>
 						Community
 					</h2>
-					<p class="dark:text-neutral-300 mt-2 mb-4">
+					<p class="dark:text-neutral-400 mt-2 mb-4">
 						Join a fast-growing community of developers and innovators connected all over the world.
 						The project is open-source and maintained by the Community. You can for example make
 						changes to this site, suggest awesome new features, or help us squash bugs. Not a
@@ -208,7 +208,7 @@
 				</div>
 			</div>
 			<div
-				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+				class="p-4 rounded-lg lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
 			>
 				<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 					<svg
@@ -228,13 +228,13 @@
 
 					Get rewarded
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Become part of our thriving mining community and leverage your computer's processing power
 					to validate transactions, boost network security, and generate a steady stream of income.
 				</p>
 			</div>
 			<div
-				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+				class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
 			>
 				<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 					<svg
@@ -253,13 +253,13 @@
 					</svg>
 					Be your own bank
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Kryptokrona offers easy and safe ways to manage your money, helping you rely less on
 					traditional banks and giving you more control over your financial life.
 				</p>
 			</div>
 			<div
-				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg md:rounded-tr-3xl lg:rounded-tr-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+				class="p-4 rounded-lg md:rounded-tr-3xl lg:rounded-tr-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
 			>
 				<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 					<svg
@@ -278,13 +278,13 @@
 					</svg>
 					Communicate privately
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					Our blockchain-based messenger ensures secure, private, and encrypted peer-to-peer
 					communication, keeping your sensitive data and personal information safe from prying eyes.
 				</p>
 			</div>
 			<div
-				class="dark:bg-neutral-800 bg-neutral-50 p-4 rounded-lg md:rounded-tl-3xl lg:rounded-tl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+				class="p-4 rounded-lg md:rounded-tl-3xl lg:rounded-tl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
 			>
 				<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 					<svg
@@ -304,7 +304,7 @@
 
 					Contribute
 				</h2>
-				<p class="dark:text-neutral-300 mt-2 mb-4">
+				<p class="dark:text-neutral-400 mt-2 mb-4">
 					We wholeheartedly welcome contributors who share our passion for innovation,
 					decentralization, and the desire to make a difference in the rapidly evolving world of
 					cryptocurrency.

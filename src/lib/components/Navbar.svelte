@@ -38,23 +38,23 @@
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="#"
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/"
 				>Home</a
 			>
 
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="#"
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/wallet"
 				>Wallet</a
 			>
 
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="#"
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/blog"
 				>Blog</a
 			>
 
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="#"
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/about"
 				>About</a
 			>
 
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="#"
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="https://hugin.chat"
 				>Hugin <span aria-hidden="true">&rarr;</span></a
 			>
 		</div>
@@ -98,34 +98,38 @@
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
 							<a
-								href="#"
+                data-sveltekit-preload-data
+								href="/"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
-								>Product</a
+								>Home</a
 							>
 
 							<a
-								href="#"
+                data-sveltekit-preload-data
+								href="/wallet"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
-								>Features</a
+								>Wallet</a
 							>
 
 							<a
-								href="#"
+                data-sveltekit-preload-data
+								href="/blog"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
-								>Marketplace</a
+								>Blog</a
 							>
 
 							<a
-								href="#"
+                data-sveltekit-preload-data
+								href="/about"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
-								>Company</a
+								>About</a
 							>
 						</div>
 						<div class="py-6">
 							<a
-								href="#"
+								href="https://hugin.chat"
 								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
-								>Log in</a
+								>Hugin</a
 							>
 						</div>
 					</div>

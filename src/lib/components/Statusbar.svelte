@@ -1,14 +1,15 @@
 <script lang="ts">
   import {fade} from "svelte/transition";
-  import {onMount} from "svelte";
+  import {onDestroy, onMount} from "svelte";
 
   let supply = 0;
   onMount(() => {
+    supply = 0
     supply = 447000000
   })
 </script>
 
-<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 my-16">
+<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 mt-32 sm:mt-36 lg:mt-40">
   <div>
     {#if supply}
       <p in:fade={{delay: 500}} class="text-neutral-500 mb-1.5 tracking-tight text-end md:text-start">SUPPLY</p>
@@ -22,7 +23,7 @@
       style="width: {((supply / 1000000000) * 100).toFixed(2)}%"
     >
       {#if supply}
-        <p class="absolute -top-8 dark:text-white text-neutral-900 w-36 text-end mr-4 font-bold">
+        <p class="absolute -top-8 dark:text-white text-neutral-900 w-36 text-end mr-4 font-bold" in:fade={{delay: 150}}>
           <span class="block"><span></span>{(supply / 1000000).toFixed(2)}M / 1 B <span
             class="absolute mt-1.5 ml-1"> ↴</span></span></p>
       {:else }
