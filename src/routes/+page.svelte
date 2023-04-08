@@ -1,13 +1,9 @@
 <script>
-  import Signup from "$lib/components/Signup.svelte";
   import LatestPosts from "$lib/components/blog/LatestPosts.svelte";
   import Grid from "$lib/components/Grid.svelte";
   import Statusbar from "$lib/components/Statusbar.svelte";
   import LastBlock from "$lib/components/LastBlock.svelte";
   import Features from "$lib/components/Features.svelte";
-
-  export let data
-  const { posts } = data
 
 </script>
 

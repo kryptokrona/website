@@ -1,12 +1,9 @@
 <script lang="ts">
   import {fade} from "svelte/transition";
-  import {onDestroy, onMount} from "svelte";
+  import {nodeData, supplyData} from "../stores/data";
 
-  let supply = 0;
-  onMount(() => {
-    supply = 0
-    supply = 447000000
-  })
+  let supply = $supplyData.calculatedSupply.toFixed(2) || 0
+
 </script>
 
 <div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 py-32 sm:py-36">
@@ -34,15 +31,15 @@
   {#if supply}
     <div class="flex justify-between dark:text-white text-neutral-900 mt-4" in:fade={{delay: 500}}>
       <div>
-        <p class="font-bold">542M</p>
+        <p class="font-bold">{($nodeData.tx_count / 1000).toFixed(0)} K</p>
         <p class="text-neutral-500">TRANSACTIONS</p>
       </div>
       <div class="text-center">
-        <p class="font-bold">557M</p>
+        <p class="font-bold">{($nodeData.difficulty / 1000000000).toFixed(3)} B</p>
         <p class="text-neutral-500">DIFFICULTY</p>
       </div>
       <div class="text-end">
-        <p class="font-bold">362</p>
+        <p class="font-bold">{$nodeData.grey_peerlist_size}</p>
         <p class="text-neutral-500">NODES</p>
       </div>
     </div>
