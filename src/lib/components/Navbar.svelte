@@ -46,9 +46,13 @@
 				>Wallet</a
 			>
 
-			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/blog"
+      <a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/mining"
+      >Mining</a
+      >
+
+<!--			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/blog"
 				>Blog</a
-			>
+			>-->
 
 			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/about"
 				>About</a
@@ -113,12 +117,12 @@
 								>Wallet</a
 							>
 
-							<a
+<!--							<a
                 data-sveltekit-preload-data
 								href="/blog"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
 								>Blog</a
-							>
+							>-->
 
 							<a
                 data-sveltekit-preload-data

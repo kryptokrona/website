@@ -1,30 +1,28 @@
 <script lang="ts">
 
-  import {getAssetURL} from "$lib/utils/getAssets";
+  export const getPostDate = (timestamp) => {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    const date = new Date(timestamp)
+    const day = date.getDay()
+    const month = monthNames[date.getMonth()]
+    const year = date.getFullYear()
+    return `${day} ${month} ${year}`
+  }
 
-  export let data
+  export let post
 
-  console.log(data)
+  console.log(post)
 </script>
 
-<article class="flex flex-col items-start justify-between">
-  <div class="relative w-full">
-    <img src="{getAssetURL(data.thumbnail)}" alt="" class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-  </div>
-  <div class="max-w-xl">
-    <div class="mt-8 flex items-center gap-x-4 text-xs">
-      <time datetime="2020-03-16" class="text-stone-500 dark:text-stone-400">Mar 16, 2020</time>
-<!--      <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-stone-600 dark:text-stone-400 hover:bg-gray-100">Marketing</a>-->
+<a href="/blog/{post.slug}" class="mb-5 sm:mb-10 group">
+  <article>
+    <div class="bg-zinc-800 p-4 rounded border border-zinc-700 h-48"></div>
+    <div class="flex flex-col gap-2 px-2 mt-2">
+      <h2 class="text-2xl">{post.title}</h2>
+      <p class="text-sm text-zinc-500">{getPostDate(post.date_created)}</p>
+      <p class="text-zinc-400">{post.summary}</p>
     </div>
-    <div class="group relative">
-      <h3 class="mt-3 text-lg font-semibold leading-6 text-stone-900 dark:text-stone-200 group-hover:text-gray-600">
-        <a data-sveltekit-preload-data href="/blog/{data.slug}">
-          <span class="absolute inset-0"></span>
-          {data.title}
-        </a>
-      </h3>
-      <p class="mt-5 line-clamp-3 text-sm leading-6 text-stone-600 dark:text-stone-400">{data.summary}</p>
-    </div>
-  </div>
-</article>
+  </article>
+</a>

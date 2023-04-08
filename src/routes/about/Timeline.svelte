@@ -1,7 +1,7 @@
-<div class="mx-auto -mt-8 max-w-6xl">
+<div class="mx-auto mt-8 max-w-6xl px-4 xl:px-2">
   <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
     <div>
-      <time datetime="2021-08" class="flex items-center text-sm font-semibold leading-6 text-green-500">
+      <time datetime="2021-08" class="flex items-center text-sm font-semibold leading-6 text-green-400">
         <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>
@@ -13,7 +13,7 @@
     </div>
 
     <div>
-      <time datetime="2021-12" class="flex items-center text-sm font-semibold leading-6 text-green-500">
+      <time datetime="2021-12" class="flex items-center text-sm font-semibold leading-6 text-green-400">
         <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>
@@ -25,7 +25,7 @@
     </div>
 
     <div>
-      <time datetime="2022-02" class="flex items-center text-sm font-semibold leading-6 text-green-500">
+      <time datetime="2022-02" class="flex items-center text-sm font-semibold leading-6 text-green-400">
         <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>
@@ -37,7 +37,7 @@
     </div>
 
     <div>
-      <time datetime="2022-12" class="flex items-center text-sm font-semibold leading-6 text-green-500">
+      <time datetime="2022-12" class="flex items-center text-sm font-semibold leading-6 text-green-400">
         <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>

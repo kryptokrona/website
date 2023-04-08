@@ -9,7 +9,7 @@
   })
 </script>
 
-<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 mt-32 sm:mt-36 lg:mt-40">
+<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 py-32 sm:py-36">
   <div>
     {#if supply}
       <p in:fade={{delay: 500}} class="text-neutral-500 mb-1.5 tracking-tight text-end md:text-start">SUPPLY</p>
@@ -19,7 +19,7 @@
   </div>
   <div class="w-full h-4 dark:bg-neutral-500 bg-neutral-300 rounded-sm p-0.5">
     <div
-      class="relative flex justify-end rounded-sm bg-blue-500 h-full transition-all duration-1000"
+      class="relative flex justify-end rounded-sm bg-green-400 h-full transition-all duration-1000"
       style="width: {((supply / 1000000000) * 100).toFixed(2)}%"
     >
       {#if supply}
