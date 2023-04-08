@@ -15,9 +15,9 @@
 </script>
 
 <a class="py-1 px-4 border rounded-full inline-flex gap-2 items-center border-neutral-700 cursor-pointer text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-stone-50/10 hover:ring-stone-50/20" target="_blank" href="https://explorer.kryptokrona.org/block/{height - 1}">
-  <div class="bg-green-500 rounded-full h-2 w-2 blink_me"></div>
-  <p class="text-neutral-400">Last block:</p>
-  <p class="text-neutral-50">{numberWithCommas(parseInt((height - 1))) ?? 0}</p>
+  <div class="dark:bg-green-400 bg-blue-400 rounded-full h-2 w-2 blink_me"></div>
+  <p class="text-neutral-500">Last block:</p>
+  <p class="dark:text-neutral-50 text-neutral-900">{numberWithCommas(parseInt((height - 1))) ?? 0}</p>
 </a>
 
 <style>

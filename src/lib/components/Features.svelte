@@ -19,11 +19,10 @@
           />
         </svg>
 
-        Get rewarded
+        Nordic Crypto
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Become part of our thriving mining community and leverage your computer's processing power
-        to validate transactions, boost network security, and generate a steady stream of income.
+        A growing cryptocurrency from the Nordics, with the vision ensure Nordic excellence in development of secure systems and economic tools.
       </p>
     </div>
     <div
@@ -44,25 +43,24 @@
             stroke-linejoin="round"
           />
         </svg>
-        Be your own bank
+        Decentralized
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Kryptokrona offers easy and safe ways to manage your money, helping you rely less on
-        traditional banks and giving you more control over your financial life.
+        Kryptokrona adds value to the region as a robust decentralized payment and communication system. Securing our freedom as citizens.
       </p>
     </div>
     <div
-      class="p-4  dark:bg-neutral-800 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+      class="p-4 dark:bg-neutral-800 bg-neutral-200 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
     >
       <div>
-        <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
+        <h2 class="text-2xl font-bold dark:text-neutral-50 text-neutral-900 tracking-tight">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="2"
             stroke="currentColor"
-            class="w-6 h-6 inline-block mb-1"
+            class="w-6 h-6 inline-block mb-1 stroke-red-500"
           >
             <path
               stroke-linecap="round"
@@ -72,13 +70,13 @@
           </svg>
           Software
         </h2>
-        <p class="dark:text-neutral-400 mt-2 mb-4">
+        <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
           Here's a list of tools and apps being built, feel free to contribute or test it out!
         </p>
       </div>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-tl-3xl lg:rounded-tr-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg  md:rounded-tl-3xl lg:rounded-tl-lg lg:rounded-tr-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg
@@ -95,11 +93,10 @@
             d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
           />
         </svg>
-        Communicate privately
+        A response
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Our blockchain-based messenger ensures secure, private, and encrypted peer-to-peer
-        communication, keeping your sensitive data and personal information safe from prying eyes.
+        Kryptokrona launched as an open-source alternative to a digital e-krona/e-krone and the growing cashless society in the Nordics.
       </p>
     </div>
     <div
@@ -121,12 +118,10 @@
           />
         </svg>
 
-        Contribute
+        No middleman
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        We wholeheartedly welcome contributors who share our passion for innovation,
-        decentralization, and the desire to make a difference in the rapidly evolving world of
-        cryptocurrency.
+        The Kryptokrona isn’t dependent on any central bank or server, thus less fragile than today's financial systems.
       </p>
     </div>
   </div>

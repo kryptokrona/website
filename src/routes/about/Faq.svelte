@@ -4,7 +4,7 @@
 	</h2>
 	<p class="mt-6 max-w-2xl text-base leading-7 text-neutral-500">
 		Have a different question and can’t find the answer you’re looking for? Reach out to our support
-		team by <a class="font-semibold text-green-400 hover:text-indigo-500" href="#"
+		team by <a class="font-semibold dark:text-green-400 text-blue-400 hover:text-indigo-500" href="#"
 			>Join us on Discord</a
 		> and we’ll get back to you as soon as we can.
 	</p>

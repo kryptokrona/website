@@ -19,7 +19,7 @@
   </div>
   <div class="w-full h-4 dark:bg-neutral-500 bg-neutral-300 rounded-sm p-0.5">
     <div
-      class="relative flex justify-end rounded-sm bg-green-400 h-full transition-all duration-1000"
+      class="relative flex justify-end rounded-sm dark:bg-green-400 bg-blue-400 h-full transition-all duration-1000"
       style="width: {((supply / 1000000000) * 100).toFixed(2)}%"
     >
       {#if supply}
