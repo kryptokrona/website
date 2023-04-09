@@ -13,7 +13,6 @@
 
   export let post
 
-  console.log(post)
 </script>
 
 <a href="/blog/{post.slug}" class="mb-5 sm:mb-10 group">

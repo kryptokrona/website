@@ -3,7 +3,6 @@
 
   export let posts
 
-  $: console.log(posts)
 </script>
 
 <div class="py-24 sm:py-32 px-4 xl:px-2">

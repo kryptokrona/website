@@ -11,8 +11,6 @@
   }
 
   export let data
-
-  $:console.log(data)
 </script>
 
 <div class="h-full w-full overflow-y-scroll py-32 sm:py-36 lg:py-40">

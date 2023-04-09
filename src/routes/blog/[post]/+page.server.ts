@@ -1,26 +1,17 @@
+import {getDirectusClient} from "$lib/utils/directus";
 
-import {compile} from "mdsvex";
-import {getDirectusClient} from "../../../lib/utils/directus";
 
-export async function load({params}) {
-    const directus = await getDirectusClient();
+/** @type {import('./$types').Actions} */
+export const actions = {
+	default: async ({ request }) => {
+		const data = await request.formData();
 
-    try {
-        const res = await directus.items(`posts`).readOne(params.post, {
-            fields: ['*'],
-        })
+		const directus = await getDirectusClient();
 
-        const compiledResponse = await compile(res.body)
-        const mdx = compiledResponse.code
-            .replace(/>{@html `<code class="language-/g, '><code class="language-')
-            .replace(/<\/code>`}<\/pre>/g, '</code></pre>')
+		await directus.items('signups').createOne({
+			email: data.get('email') ?? ''
+		});
 
-        return { content: mdx, extra: res };
-    } catch (err) {
-        console.log(err)
-        return {
-            status: 404
-        };
-    }
-
-}
+		return { success: true };
+	}
+};

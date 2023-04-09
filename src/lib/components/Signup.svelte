@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-  /** @type {import('./$types').PageData} */
-  export let data;
-  /** @type {import('./$types').ActionData} */
-  export let form;
+	import toast from 'svelte-french-toast';
+	import { page } from '$app/stores';
+
+	$: console.log($page);
+
+	$: if ($page.form?.success) toast.success('Success', { position: 'top-center' });
 </script>
 
 <div class="border-t dark:border-neutral-50/10 border-neutral-300 mt-16 sm:mt-24 sm:mt-24 xl:mt-32">
@@ -19,7 +21,7 @@
 			Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et
 			culpa.
 		</p>
-		<form use:enhance class="mx-auto mt-10 flex max-w-md gap-x-4" method="post">
+		<form class="mx-auto mt-10 flex max-w-md gap-x-4" method="post" use:enhance>
 			<label class="sr-only" for="email-address">Email address</label>
 			<input
 				autocomplete="email"

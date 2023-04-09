@@ -4,7 +4,6 @@
   import {getReadableDifficultyString} from "$lib/utils/helpers.js";
 
   let supply = $supplyData.calculatedSupply.toFixed(2) || 0
-
 </script>
 
 <div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 py-32 sm:py-36">
