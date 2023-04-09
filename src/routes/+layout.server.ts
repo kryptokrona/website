@@ -1,6 +1,7 @@
 import { getDirectusClient } from '../lib/utils/directus';
 import { fetchNode } from '$lib/utils/helpers';
 import { fetchSupply } from "../lib/utils/helpers";
+import { blogPosts, nodeData, supplyData } from "../lib/stores/data";
 
 export async function load() {
 	const directus = await getDirectusClient();
@@ -14,6 +15,9 @@ export async function load() {
 			sort: '-date_created'
 		});
 
+		supplyData.set(supply)
+		nodeData.set(node)
+		blogPosts.set(posts)
 		return { posts,node, supply }
 
 	} catch (e) {

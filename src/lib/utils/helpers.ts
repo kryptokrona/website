@@ -23,7 +23,8 @@ export function serializeSchema(data: any): string {
 	return `<script type="application/ld+json">${JSON.stringify(data, null, 2)}${'<'}/script>`
 }
 
-export function numberWithCommas(x: string | number): string {
+export function numberWithCommas(x: string | number): string | undefined {
+	if(!x) return undefined
 	x = x.toString();
 	const pattern = /(-?\d+)(\d{3})/;
 	while (pattern.test(x)) x = x.replace(pattern, '$1,$2');

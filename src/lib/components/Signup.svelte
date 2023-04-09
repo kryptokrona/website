@@ -3,8 +3,6 @@
 	import toast from 'svelte-french-toast';
 	import { page } from '$app/stores';
 
-	$: console.log($page);
-
 	$: if ($page.form?.success) toast.success('Success', { position: 'top-center' });
 </script>
 
