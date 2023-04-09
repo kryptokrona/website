@@ -1,4 +1,4 @@
-<div class="py-32 sm:py-36 lg:py-40">
+<div class="pt-32 sm:pt-36 lg:pt-40 pb-16 sm:pb-20">
   <div class="mx-auto max-w-6xl">
     <div class="mx-auto px-4 xl:px-2">
       <p class="text-base font-semibold leading-7 dark:text-neutral-300 text-neutral-600">Money for the future</p>

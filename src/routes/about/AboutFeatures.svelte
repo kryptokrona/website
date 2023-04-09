@@ -1,4 +1,9 @@
-<div class="max-w-6xl mx-auto px-4 xl:px-2">
+<script>
+  import {supplyData} from "$lib/stores/data";
+  import {numberWithCommas} from "$lib/utils/helpers";
+</script>
+
+<div class="max-w-6xl mx-auto px-4 xl:px-2 pb-16 sm:pb-20">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
       class="p-4 rounded-lg lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
@@ -19,11 +24,10 @@
           />
         </svg>
 
-        Get rewarded
+        Supply
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
-        Become part of our thriving mining community and leverage your computer's processing power
-        to validate transactions, boost network security, and generate a steady stream of income.
+      <p class="dark:text-neutral-400 text-neutral-600 mt-2 mb-4">
+        <span class="dark:text-neutral-100 text-neutral-900">{numberWithCommas(($supplyData.calculatedSupply).toFixed())} </span> coins has been minted out of {numberWithCommas($supplyData.calculatedMaxSupply)}.
       </p>
     </div>
     <div
@@ -45,11 +49,10 @@
           />
         </svg>
 
-        Get rewarded
+        Algorithm
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Become part of our thriving mining community and leverage your computer's processing power
-        to validate transactions, boost network security, and generate a steady stream of income.
+        Currently using CryptoNight-Pico, which is a more fair algorithm than Bitcoin's SHA256 and can even be competently mined on ARM based phones!
       </p>
     </div>
     <div
@@ -71,11 +74,10 @@
           />
         </svg>
 
-        Get rewarded
+        Blocktime
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Become part of our thriving mining community and leverage your computer's processing power
-        to validate transactions, boost network security, and generate a steady stream of income.
+        Our network processes new transactions every 90 seconds, in comparison to Bitcoins 10 minute delay.
       </p>
     </div>
     <div
@@ -96,11 +98,10 @@
             stroke-linejoin="round"
           />
         </svg>
-        Be your own bank
+        Untraceable
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Kryptokrona offers easy and safe ways to manage your money, helping you rely less on
-        traditional banks and giving you more control over your financial life.
+        XKR transactions make use of ring signatures and stealth addresses to keep prying eyes off of your private transactions!
       </p>
     </div>
     <div
@@ -121,11 +122,10 @@
             d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
           />
         </svg>
-        Communicate privately
+        Fungible
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        Our blockchain-based messenger ensures secure, private, and encrypted peer-to-peer
-        communication, keeping your sensitive data and personal information safe from prying eyes.
+        The Kryptokrona isn’t dependent on our central banks or servers, thus less fragile than todays financial systems.
       </p>
     </div>
     <div
@@ -147,12 +147,10 @@
           />
         </svg>
 
-        Contribute
+        Drama-free
       </h2>
       <p class="dark:text-neutral-400 mt-2 mb-4">
-        We wholeheartedly welcome contributors who share our passion for innovation,
-        decentralization, and the desire to make a difference in the rapidly evolving world of
-        cryptocurrency.
+        Our network reduces the amount of new coins minted with every block, making for a drama-free emission.
       </p>
     </div>
   </div>

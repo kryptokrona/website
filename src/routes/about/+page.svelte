@@ -10,6 +10,5 @@
 <Header />
 <AboutFeatures />
 <Timeline />
-<Timeline />
 <Statusbar />
 <Faq />

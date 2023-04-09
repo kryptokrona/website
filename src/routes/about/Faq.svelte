@@ -1,76 +1,36 @@
+<script lang="ts">
+  const questions = [
+    {
+      question: "How can I get started with Kryptokrona?",
+      answer: "To get started with Kryptokrona, you'll need to download our wallet from our website. Once you've installed the wallet, you can start receiving, sending, and storing kryptokrona. You can obtain coins by mining, purchasing them on an exchange, or receiving them from another user."
+    },
+  ]
+</script>
+
 <div class="mx-auto max-w-6xl py-16 sm:py-24 px-4 xl:px-2">
 	<h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-neutral-50">
 		Frequently asked questions
 	</h2>
 	<p class="mt-6 max-w-2xl text-base leading-7 text-neutral-500">
-		Have a different question and can’t find the answer you’re looking for? Reach out to our support
-		team by <a class="font-semibold dark:text-green-400 text-blue-400 hover:text-indigo-500" href="#"
-			>Join us on Discord</a
-		> and we’ll get back to you as soon as we can.
+		Have a different question and can’t find the answer you’re looking for? Reach out to us on <a
+			class="font-semibold dark:text-green-400 text-blue-400 hover:text-indigo-500"
+			href="#">Discord</a
+		> and our community will surely have an answer for you.
 	</p>
 	<div class="mt-20">
 		<dl
 			class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10"
 		>
-			<div>
-				<dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-					What&#039;s the best thing about Switzerland?
-				</dt>
-				<dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-					I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Quas cupiditate laboriosam fugiat.
-				</dd>
-			</div>
-
-      <div>
-        <dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-          What&#039;s the best thing about Switzerland?
-        </dt>
-        <dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-          I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas cupiditate laboriosam fugiat.
-        </dd>
-      </div>
-
-      <div>
-        <dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-          What&#039;s the best thing about Switzerland?
-        </dt>
-        <dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-          I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas cupiditate laboriosam fugiat.
-        </dd>
-      </div>
-
-      <div>
-        <dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-          What&#039;s the best thing about Switzerland?
-        </dt>
-        <dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-          I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas cupiditate laboriosam fugiat.
-        </dd>
-      </div>
-
-      <div>
-        <dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-          What&#039;s the best thing about Switzerland?
-        </dt>
-        <dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-          I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas cupiditate laboriosam fugiat.
-        </dd>
-      </div>
-
-      <div>
-        <dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
-          What&#039;s the best thing about Switzerland?
-        </dt>
-        <dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
-          I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas cupiditate laboriosam fugiat.
-        </dd>
-      </div>
+			{#each questions as item}
+				<div>
+					<dt class="text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-50">
+						{item.question}
+					</dt>
+					<dd class="mt-2 text-base leading-7 text-neutral-600 dark:text-neutral-400">
+						{item.answer}
+					</dd>
+				</div>
+			{/each}
 		</dl>
 	</div>
 </div>
