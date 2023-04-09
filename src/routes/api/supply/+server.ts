@@ -1,6 +1,4 @@
 import { error, json } from "@sveltejs/kit";
-import {fetchSupply} from "../../../lib/utils/helpers";
-
 
 let timestamp: number
 let SUPPLY: number
@@ -8,10 +6,10 @@ const MAX = 100000000000000
 const COIN_UNITS = 100000
 const DECIMALS = 5
 export async function GET() {
-    getLatest()
+    await getLatest()
 
     if (!SUPPLY) {
-        throw error('404', 'Bad request')
+        throw error(404, 'Bad request')
     } else {
         return json({
             lastCheck: timestamp,
