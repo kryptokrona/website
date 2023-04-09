@@ -10,11 +10,11 @@ export async function load() {
 	try {
 		const {data: posts} = await directus.items('posts').readByQuery({
 			fields: ['*'],
-			sort: '-date_created',
-			filter: { status: 'published' }
+			filter: {status: 'published'},
+			sort: '-date_created'
 		});
 
-		return { posts, node, supply }
+		return { posts,node, supply }
 
 	} catch (e) {
 		console.log(e);

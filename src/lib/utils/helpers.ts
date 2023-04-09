@@ -1,4 +1,4 @@
-import numbro from 'numbro';
+
 export const fetchNode = async (node1: string, node2?: string): Promise<NodeData> => {
 	if (node1) {
 		const responseNode1 = await fetch(node1);
@@ -19,6 +19,10 @@ export const fetchSupply = async (url: string): Promise<SuplyData> => {
 	throw new Error("Couldn't fetch supply");
 };
 
+export function serializeSchema(data: any): string {
+	return `<script type="application/ld+json">${JSON.stringify(data, null, 2)}${'<'}/script>`
+}
+
 export function numberWithCommas(x: string | number): string {
 	x = x.toString();
 	const pattern = /(-?\d+)(\d{3})/;
@@ -26,8 +30,8 @@ export function numberWithCommas(x: string | number): string {
 	return x;
 }
 
-export function prettifyHashrate(value, decimal) {
-	var kilo = 1000,
+export function prettifyHashrate(value: number, decimal: number) {
+	const kilo = 1000,
 		mega = 1000000,
 		giga = 1000000000,
 		tera = 1000000000000;
@@ -39,11 +43,11 @@ export function prettifyHashrate(value, decimal) {
 	else return (value / tera).toFixed(decimal) + ' TH/s';
 }
 
-export function localizeNumber(number: string) {
+export function localizeNumber(number: number) {
 	const numberFormatter = new Intl.NumberFormat('en-US'); // US formatting, force commas.
 	return numberFormatter.format(number);
 }
-export function getReadableDifficultyString(difficulty:number, precision: number) {
+export function getReadableDifficultyString(difficulty: number, precision: number) {
 	if (isNaN(parseFloat(String(difficulty))) || !isFinite(difficulty)) return 0;
 	if (typeof precision === 'undefined') precision = 0;
 	const units = ['', 'k', 'M', 'G', 'T', 'P'],
