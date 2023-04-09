@@ -1,6 +1,7 @@
 <script lang="ts">
   import {fade} from "svelte/transition";
   import {nodeData, supplyData} from "../stores/data";
+  import {getReadableDifficultyString} from "$lib/utils/helpers.js";
 
   let supply = $supplyData.calculatedSupply.toFixed(2) || 0
 
@@ -35,7 +36,7 @@
         <p class="text-neutral-500">TRANSACTIONS</p>
       </div>
       <div class="text-center">
-        <p class="font-bold">{($nodeData.difficulty / 1000000000).toFixed(3)} B</p>
+        <p class="font-bold">{getReadableDifficultyString($nodeData.difficulty)}</p>
         <p class="text-neutral-500">DIFFICULTY</p>
       </div>
       <div class="text-end">
