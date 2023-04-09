@@ -4,8 +4,11 @@
   import Statusbar from "$lib/components/Statusbar.svelte";
   import LastBlock from "$lib/components/LastBlock.svelte";
   import Features from "$lib/components/Features.svelte";
-
 </script>
+
+<svelte:head>
+  <title>Kryptokrona</title>
+</svelte:head>
 
 <div class="relative isolate">
   <div class="mx-auto max-w-6xl py-32 sm:py-36 lg:py-40 px-4 xl:px-2">
