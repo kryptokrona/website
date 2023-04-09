@@ -1,21 +1,20 @@
 <script>
 	import Card from './Card.svelte';
-  import {numberWithCommas} from "$lib/utils/helpers";
-  import {supplyData} from "$lib/stores/data";
+	import { supplyData } from '$lib/stores/data';
+	import { numberWithCommas } from '$lib/utils/formats';
 
-  const content = [
-    {
-      title: 'Supply',
-      text: `<span class="dark:text-neutral-100 text-neutral-900">${numberWithCommas(
-        $supplyData.calculatedSupply.toFixed()
-      )}</span> coins has been minted out of ${numberWithCommas($supplyData.calculatedMaxSupply)}.`
-    },
-    {
-      title: 'Supply',
-      text: 'supply'
-    }
-  ];
-
+	const content = [
+		{
+			title: 'Supply',
+			text: `<span class="dark:text-neutral-100 text-neutral-900">${numberWithCommas(
+				$supplyData.calculatedSupply.toFixed()
+			)}</span> coins has been minted out of ${numberWithCommas($supplyData.calculatedMaxSupply)}.`
+		},
+		{
+			title: 'Supply',
+			text: 'supply'
+		}
+	];
 </script>
 
 <div class="max-w-6xl mx-auto px-4 xl:px-2 pb-16 sm:pb-20">

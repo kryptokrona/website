@@ -32,7 +32,7 @@ declare global {
 		"white_peerlist_size": number
 	}
 
-	interface SuplyData {
+	interface SupplyData {
 		"lastCheck": number,
 		"circulatingUnits": number,
 		"maxUnits": number,

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { numberWithCommas } from '$lib/utils/helpers';
 	import { nodeData } from '$lib/stores/data';
+	import { numberWithCommas } from '$lib/utils/formats';
 </script>
 
 <a
