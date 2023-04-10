@@ -38,7 +38,6 @@
 	"dependencies": {
 		"@vercel/analytics": "^0.1.11",
 		"numbro": "^2.3.6",
-		"svelte-french-toast": "^1.0.4-beta.0",
-		"web-vitals": "^3.3.1"
+		"svelte-french-toast": "^1.0.4-beta.0"
 	}
 }

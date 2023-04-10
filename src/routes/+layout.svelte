@@ -6,9 +6,6 @@
   import { dev } from '$app/environment';
   import { inject } from '@vercel/analytics';
 	import { Toaster } from 'svelte-french-toast';
-  import { browser } from "$app/environment";
-  import { webVitals } from '$lib/vitals';
-  import { page } from '$app/stores';
 
   import '../app.css';
 
@@ -18,14 +15,6 @@
 	blogPosts.set(data.posts);
 	supplyData.set(data.supply);
 
-  let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
-  $: if (browser && analyticsId) {
-    webVitals({
-      path: $page.url.pathname,
-      params: $page.params,
-      analyticsId
-    })
-  }
   inject({ mode: dev ? 'development' : 'production' });
 
 </script>
