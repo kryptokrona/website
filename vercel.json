@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/:path*",
+      "source": "/about",
       "headers": [
         {
           "key": "Cache-Control",
