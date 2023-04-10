@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="p-4 rounded-lg border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md dark:bg-neutral-800"
+	class="p-4 rounded-lg border border-neutral-700 dark:shadow-xl shadow-md dark:bg-neutral-800"
 >
 	<h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
 		<svg
