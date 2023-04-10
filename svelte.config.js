@@ -10,7 +10,7 @@ const config = {
 		csp: {
 			mode: 'nonce',
 			directives: {
-				"script-src": ['self'],
+				"script-src": ['self', ' vitals.vercel-insights.com'],
 				"base-uri": ['self'],
 				"font-src": ['self'],
 				"form-action": ['self'],
