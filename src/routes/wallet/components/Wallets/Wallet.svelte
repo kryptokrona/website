@@ -1,12 +1,12 @@
 <script lang="ts">
-	import WindowsIcon from "./icons/WindowsIcon.svelte";
-  import AppleIcon from "./icons/AppleIcon.svelte";
-  import LinuxIcon from "./icons/LinuxIcon.svelte";
-  import AndroidIcon from "./icons/AndroidIcon.svelte";
-  import DownloadIcon from "./icons/DownloadIcon.svelte";
-  import GithubIcon from "./icons/GithubIcon.svelte";
+	import WindowsIcon from './icons/WindowsIcon.svelte';
+	import AppleIcon from './icons/AppleIcon.svelte';
+	import LinuxIcon from './icons/LinuxIcon.svelte';
+	import AndroidIcon from './icons/AndroidIcon.svelte';
+	import DownloadIcon from './icons/DownloadIcon.svelte';
+	import GithubIcon from './icons/GithubIcon.svelte';
 
-  export let data;
+	export let data;
 	const { title, text, download, source, os } = data;
 </script>
 
@@ -21,16 +21,16 @@
 					class="inline-flex gap-2 flex-shrink-0 rounded-full py-0.5 text-xs font-medium dark:text-neutral-50 text-neutral-900"
 				>
 					{#if os.includes('win')}
-            <WindowsIcon />
+						<WindowsIcon />
 					{/if}
 					{#if os.includes('mac') || os.includes('ios')}
-            <AppleIcon />
+						<AppleIcon />
 					{/if}
 					{#if os.includes('linux')}
-	          <LinuxIcon />
+						<LinuxIcon />
 					{/if}
 					{#if os.includes('android')}
-            <AndroidIcon />
+						<AndroidIcon />
 					{/if}
 				</span>
 			</div>
@@ -44,7 +44,7 @@
 					class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-neutral-50"
 					href={download}
 				>
-          <DownloadIcon />
+					<DownloadIcon />
 					Download
 				</a>
 			</div>
@@ -53,7 +53,7 @@
 					class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-neutral-50"
 					href={source}
 				>
-          <GithubIcon />
+					<GithubIcon />
 					Source
 				</a>
 			</div>

@@ -1,17 +1,11 @@
 <script>
   import Question from "./Question.svelte";
-
-  const content = [
-    {
-      question: "How can I get started with Kryptokrona?",
-      answer: "To get started with Kryptokrona, you'll need to download our wallet from our website. Once you've installed the wallet, you can start receiving, sending, and storing kryptokrona. You can obtain coins by mining, purchasing them on an exchange, or receiving them from another user."
-    },
-  ]
+  import { questions } from "./questions.js";
 
   const seoData = `<script type="application/ld+json">{
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [${content
+      "mainEntity": [${questions
     .map(
       (question, i) =>
         `{
@@ -21,7 +15,7 @@
           "@type": "Answer",
           "text": "${question.answer}"
           }
-        }${i !== content.length - 1 ? ',' : ''}`
+        }${i !== questions.length - 1 ? ',' : ''}`
     )
     .join(' ')}]
     }

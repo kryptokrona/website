@@ -41,6 +41,19 @@ declare global {
 		"calculatedSupply": number,
 		"calculatedMaxSupply": number
 	}
+
+	interface WalletsData {
+		title: string,
+		text: string,
+		download: string
+		source: string
+		os: string[]
+	}
+
+	interface FaqData {
+		question: string
+		answer: string
+	}
 }
 
 export {};
