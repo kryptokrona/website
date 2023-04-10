@@ -7,7 +7,9 @@
 
       <p class="mt-6 text-lg leading-8 dark:text-neutral-400 text-neutral-600">A core tenet of Kryptokrona's philosophy is to promote equitable mining opportunities for everyone. To accomplish this, Kryptokrona employs a unique algorithm conceived and developed by members of the Kryptokrona community: RandomX. This proof-of-work algorithm is designed to be ASIC-resistant, making it infeasible for specialized hardware to mine Kryptokrona. Consequently, miners are required to utilize consumer-grade hardware and engage in fair competition.</p>
 
-      <p class="mt-6 text-lg leading-8 dark:text-neutral-400 text-neutral-600">Kryptokrona can be mined using both CPUs and GPUs; however, CPU mining is significantly more efficient in this context. Join the Kryptokrona mining community and contribute to the future of decentralized digital currency.</p>
+      <p class="my-6 text-lg leading-8 dark:text-neutral-400 text-neutral-600">Kryptokrona can be mined using both CPUs and GPUs; however, CPU mining is significantly more efficient in this context. Join the Kryptokrona mining community and contribute to the future of decentralized digital currency.</p>
+
+      <a href="https://xmrig.com/download" class="rounded-md dark:bg-neutral-50 dark:text-neutral-900 bg-neutral-900 text-neutral-50 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-neutral-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Download XMRIG</a>
     </div>
   </div>
 </div>

@@ -25,11 +25,11 @@
           />
           <button
             on:click={() => generateConfig(address)}
-            class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            class="rounded-md dark:bg-neutral-50 dark:text-neutral-900 bg-neutral-900 text-neutral-50 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-neutral-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >Generate</button
           >
         </div>
-        <p class="mt-4 text-sm leading-6 text-gray-300">We can't access or save your address.</p>
+        <p class="mt-4 text-sm leading-6 text-gray-300">We can't see or save your address.</p>
       </div>
     </div>
   </div>
