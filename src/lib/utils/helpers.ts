@@ -1,15 +1,17 @@
-export const fetchNode = async (node1: string, node2?: string): Promise<NodeData> => {
-	if (node1) {
-		const responseNode1 = await fetch(node1);
-		if (responseNode1.ok) return await responseNode1.json();
-	}
+export const fetchNode = async (url1: string, url2: string): Promise<NodeData> => {
+	if(!url1 || !url2) return
 
-	if (node2) {
-		const responseNode2 = await fetch(node1);
-		if (responseNode2.ok) return await responseNode2.json();
-	}
+	const results = await Promise.allSettled([
+		fetch(url1).then(res => res.json()),
+		fetch(url2).then(res => res.json()),
+	])
+	const [node1, node2] = results
 
-	throw new Error("Couldn't fetch node data");
+	if(node1.status === 'fulfilled') {
+		return node1.value
+	} else if(node2.status === 'fulfilled') {
+		return node2.value
+	} else 	throw new Error("Couldn't fetch nodes");
 };
 
 export const fetchSupply = async (url: string): Promise<SupplyData> => {
