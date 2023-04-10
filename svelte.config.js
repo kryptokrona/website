@@ -19,7 +19,6 @@ const config = {
 				"manifest-src": ['self'],
 				"media-src": ['self'],
 				"object-src": ['none'],
-				"style-src": ['self'],
 				"upgrade-insecure-requests": true
 			}
 		},
