@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Card from './Card.svelte';
 	import { supplyData } from '$lib/stores/data';
 	import { numberWithCommas } from '$lib/utils/formats';
@@ -6,9 +6,7 @@
 	const content = [
 		{
 			title: 'Supply',
-			text: `<span class="dark:text-neutral-100 text-neutral-900">${numberWithCommas(
-				$supplyData.calculatedSupply.toFixed()
-			)}</span> coins has been minted out of ${numberWithCommas($supplyData.calculatedMaxSupply)}.`
+			text: `<span class="dark:text-neutral-100 text-neutral-900">${numberWithCommas($supplyData.calculatedSupply.toFixed())}</span> coins has been minted out of ${numberWithCommas($supplyData.calculatedMaxSupply)}.`
 		},
 		{
 			title: 'Algorithm',

@@ -1,4 +1,7 @@
 <script>
+  import { onMount } from "svelte";
+  import { blogPosts } from "$lib/stores/data";
+
   export const getPostDate = (timestamp) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
@@ -11,6 +14,10 @@
   }
 
   export let data
+
+  onMount(() => {
+    console.log($blogPosts);
+  })
 </script>
 
 <div class="h-full w-full overflow-y-scroll py-32 sm:py-36 lg:py-40">

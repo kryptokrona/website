@@ -12,8 +12,10 @@ export async function load() {
 			fetchSupply('https://blocksum.org/api/v1/supply'),
 			directus.items('posts').readByQuery({
 				fields: ['*'],
-				filter: { status: 'published' },
-				sort: '-date_created'
+				sort: ['-date_created'],
+				filter: {status: {
+					_eq: 'published'
+					}},
 			})
 		]);
 

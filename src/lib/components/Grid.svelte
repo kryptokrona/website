@@ -1,76 +1,18 @@
 <div class="max-w-6xl mx-auto px-4 xl:px-2 mt-6">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="dark:bg-neutral-800 bg-neutral-200 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+      class="p-4 dark:bg-neutral-800 bg-neutral-200 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
     >
       <div>
         <h2 class="text-2xl font-bold dark:text-neutral-50 text-neutral-900 tracking-tight">
-          <svg
-            class="w-6 h-6 inline-block mb-1 stroke-red-500"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1 stroke-green-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
           </svg>
-          Community
+          Software
         </h2>
         <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
-          Join a fast-growing community of developers and innovators connected all over the world.
-          The project is open-source and maintained by the Community. You can for example make
-          changes to this site, suggest awesome new features, or help us squash bugs. Not a
-          developer? No worries, there's tons of things to do!
+          Here's a list of tools and apps being built, feel free to contribute or test it out!
         </p>
-      </div>
-      <div class="grid grid-cols-2 gap-3">
-        <a
-          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
-          href="https://twitter.com/kryptokrona"
-        >
-          Twitter
-        </a>
-        <a
-          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
-          href="https://t.me/xkrofficial"
-        >
-          Telegram
-        </a>
-        <a
-          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
-          href="https://github.com/kryptokrona"
-        >
-          Github
-        </a>
-        <a
-          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
-          href="https://hugin.chat"
-        >
-          Hugin
-        </a>
-        <a
-          class="inline-flex items-center gap-1 justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4 col-span-2"
-          href="https://discord.gg/nRK5k7wYy8"
-        >
-          <svg
-            class="bi bi-discord"
-            fill="currentColor"
-            height="16"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
-            />
-          </svg>
-          <p>Discord</p>
-        </a>
       </div>
     </div>
     <div
