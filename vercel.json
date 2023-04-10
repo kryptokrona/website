@@ -11,29 +11,11 @@
   ],
   "headers": [
     {
-      "source": "/about",
+      "source": "/:path*",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "max-age=86400, s-maxage=86400, stale-while-revalidate=59"
-        }
-      ]
-    },
-    {
-      "source": "/mining",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=86400, s-maxage=86400, stale-while-revalidate=59"
-        }
-      ]
-    },
-    {
-      "source": "/wallet",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=86400, s-maxage=86400, stale-while-revalidate=59"
+          "value": "s-maxage=86400, stale-while-revalidate=59"
         }
       ]
     }
