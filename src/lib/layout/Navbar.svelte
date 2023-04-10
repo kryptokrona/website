@@ -11,7 +11,7 @@
 </script>
 
 <header
-	class="border-b dark:border-neutral-50/10 border-neutral-900/10 backdrop-blur-lg fixed top-0 w-full z-[99]"
+	class="border-b dark:border-neutral-50/10 border-neutral-700 backdrop-blur-lg fixed top-0 w-full z-[99]"
 >
 	<nav
 		aria-label="Global"

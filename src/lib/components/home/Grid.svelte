@@ -30,24 +30,24 @@
 <div class="max-w-6xl mx-auto px-4 xl:px-2 mt-6">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="p-4 bg-neutral-800 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+      class="p-4 rounded-lg md:rounded-tr-3xl lg:rounded-lg border dark:bg-neutral-800 border-neutral-700  md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
     >
       <div class="flex flex-col justify-between h-full">
         <div>
-          <h2 class="text-2xl font-bold text-neutral-50 tracking-tight">
+          <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1 stroke-green-400">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
             </svg>
             Software
           </h2>
-          <p class="text-neutral-300 mt-2 mb-4">
+          <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
             Here's a list of tools and apps being built, feel free to contribute or test it out! <a href="https://github.com/kryptokrona" class="underline">More.</a>
           </p>
         </div>
         <div class="grid grid-cols-2 gap-3">
           {#each projects as project}
           <a
-            class="inline-flex gap-1 items-center justify-between  rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4 col-span-2"
+            class="inline-flex gap-1 items-center justify-between  rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4 col-span-2"
             href={project.url}
           >
             <p>{project.name}</p>
@@ -81,7 +81,7 @@
 
         Get rewarded
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
         Become part of our thriving mining community and leverage your computer's processing power
         to validate transactions, boost network security, and generate a steady stream of income.
       </p>
@@ -106,7 +106,7 @@
         </svg>
         Be your own bank
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
         Kryptokrona offers easy and safe ways to manage your money, helping you rely less on
         traditional banks and giving you more control over your financial life.
       </p>
@@ -131,7 +131,7 @@
         </svg>
         Communicate privately
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
         Our blockchain-based messenger ensures secure, private, and encrypted peer-to-peer
         communication, keeping your sensitive data and personal information safe from prying eyes.
       </p>
@@ -157,7 +157,7 @@
 
         Contribute
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
         We wholeheartedly welcome contributors who share our passion for innovation,
         decentralization, and the desire to make a difference in the rapidly evolving world of
         cryptocurrency.

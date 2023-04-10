@@ -25,7 +25,7 @@
 			<p class="opacity-0 mb-1.5">-</p>
 		{/if}
 	</div>
-	<div class="w-full h-4 dark:bg-neutral-500 bg-neutral-300 rounded-sm p-0.5">
+	<div class="w-full h-4 dark:bg-neutral-500 bg-neutral-700 rounded-sm p-0.5">
 		<div
 			class="relative flex justify-end rounded-sm dark:bg-green-400 bg-blue-400 h-full transition-all ease-in-out duration-1000"
 			style="width: {((supply / 1000000000) * 100).toFixed(0)}%"

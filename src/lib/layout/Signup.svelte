@@ -6,7 +6,7 @@
 	$: if ($page.form?.success) toast.success('Success', { position: 'top-center' });
 </script>
 
-<div class="border-t dark:border-neutral-50/10 border-neutral-300 mt-16 sm:mt-24 sm:mt-24 xl:mt-32">
+<div class="border-t dark:border-neutral-50/10 border-neutral-700 mt-16 sm:mt-24 sm:mt-24 xl:mt-32">
 	<div
 		class="xl:px-2 max-w-6xl mx-auto relative isolate overflow-hidden px-6 py-16 sm:py-24 sm:px-24 xl:py-32"
 	>
@@ -23,7 +23,7 @@
 			<label class="sr-only" for="email-address">Email address</label>
 			<input
 				autocomplete="email"
-				class="min-w-0 flex-auto rounded-md border-0 dark:bg-white/5 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset dark:ring-white/10 ring-neutral-900/10 focus:ring-2 focus:ring-inset dark:focus:ring-white focus:ring-neutral-900/20 sm:text-sm sm:leading-6"
+				class="min-w-0 flex-auto rounded-md border-0 dark:bg-white/5 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset dark:ring-white/10 ring-neutral-700 focus:ring-2 focus:ring-inset dark:focus:ring-white focus:ring-neutral-900/20 sm:text-sm sm:leading-6"
 				id="email-address"
 				name="email"
 				placeholder="Enter your email"

@@ -9,7 +9,7 @@
         </svg>
         Nordic Crypto
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700  mt-2 mb-4">
         A growing cryptocurrency from the Nordics, with the vision ensure Nordic excellence in development of secure systems and economic tools.
       </p>
     </div>
@@ -27,10 +27,10 @@
       </p>
     </div>
     <div
-      class="bg-neutral-800 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border border-neutral-700 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+      class="dark:bg-neutral-800 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border border-neutral-700 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
     >
       <div>
-        <h2 class="text-2xl font-bold text-neutral-50 tracking-tight">
+        <h2 class="text-2xl font-bold dark:text-neutral-50 text-neutral-900 tracking-tight">
           <svg
             class="w-6 h-6 inline-block mb-1 stroke-red-500"
             fill="none"
@@ -47,7 +47,7 @@
           </svg>
           Community
         </h2>
-        <p class="text-neutral-300 mt-2 mb-4">
+        <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
           Join a fast-growing community of developers and innovators connected all over the world.
           The project is open-source and maintained by the Community. You can for example make
           changes to this site, suggest awesome new features, or help us squash bugs. Not a
@@ -56,7 +56,7 @@
       </div>
       <div class="grid grid-cols-2 gap-3">
         <a
-          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
+          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4"
           href="https://twitter.com/kryptokrona"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -65,7 +65,7 @@
           <p>Twitter</p>
         </a>
         <a
-          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
+          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4"
           href="https://t.me/xkrofficial"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
@@ -74,7 +74,7 @@
           <p>Telegram</p>
         </a>
         <a
-          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
+          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4"
           href="https://github.com/kryptokrona"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -83,7 +83,7 @@
           <p>Github</p>
         </a>
         <a
-          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4"
+          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4"
           href="https://hugin.chat"
         >
           <svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -113,7 +113,7 @@
           Hugin
         </a>
         <a
-          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 dark:bg-neutral-700 bg-neutral-600 border dark:border-neutral-600 border-neutral-500 hover:bg-neutral-600 h-10 py-2 px-4 col-span-2"
+          class="inline-flex gap-1 items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-50 bg-neutral-700 border border-neutral-600 hover:bg-neutral-600 h-10 py-2 px-4 col-span-2"
           href="https://discord.gg/nRK5k7wYy8"
         >
           <svg
@@ -140,7 +140,7 @@
         </svg>
         A response
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700  mt-2 mb-4">
         Kryptokrona launched as an open-source alternative to a digital e-krona/e-krone and the growing cashless society in the Nordics.
       </p>
     </div>
@@ -153,7 +153,7 @@
         </svg>
         No middleman
       </h2>
-      <p class="dark:text-neutral-400 mt-2 mb-4">
+      <p class="dark:text-neutral-300 text-neutral-700  mt-2 mb-4">
         The Kryptokrona isn’t dependent on any central bank or server, thus less fragile than today's financial systems.
       </p>
     </div>

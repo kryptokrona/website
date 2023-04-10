@@ -1,4 +1,4 @@
-<footer aria-labelledby="footer-heading" class="border-t dark:border-neutral-50/10 border-neutral-300 px-4 xl:px-2">
+<footer aria-labelledby="footer-heading" class="border-t dark:border-neutral-50/10 border-neutral-700 px-4 xl:px-2">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-6xl pb-8 pt-16 sm:pt-24 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
