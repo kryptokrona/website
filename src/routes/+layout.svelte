@@ -3,6 +3,8 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Signup from '$lib/components/Signup.svelte';
 	import { blogPosts, nodeData, supplyData } from '$lib/stores/data';
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
 	import { Toaster } from 'svelte-french-toast';
   import { browser } from "$app/environment";
   import { webVitals } from '$lib/vitals';
@@ -24,6 +26,8 @@
       analyticsId
     })
   }
+  inject({ mode: dev ? 'development' : 'production' });
+
 </script>
 
 <Toaster />
