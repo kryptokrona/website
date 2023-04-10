@@ -1,7 +1,7 @@
 <div class="max-w-6xl mx-auto pt-16 px-4 xl:px-2">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md "
+      class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl border border-neutral-700 dark:shadow-xl shadow-md "
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -14,7 +14,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -27,10 +27,10 @@
       </p>
     </div>
     <div
-      class="dark:bg-neutral-800 bg-neutral-200 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border dark:border-neutral-700/50 border-neutral-300 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
+      class="bg-neutral-800 p-4 rounded-lg md:rounded-br-3xl lg:rounded-lg border border-neutral-700 md:row-span-2 dark:shadow-xl shadow-md flex flex-col justify-between"
     >
       <div>
-        <h2 class="text-2xl font-bold dark:text-neutral-50 text-neutral-900 tracking-tight">
+        <h2 class="text-2xl font-bold text-neutral-50 tracking-tight">
           <svg
             class="w-6 h-6 inline-block mb-1 stroke-red-500"
             fill="none"
@@ -47,7 +47,7 @@
           </svg>
           Community
         </h2>
-        <p class="dark:text-neutral-300 text-neutral-700 mt-2 mb-4">
+        <p class="text-neutral-300 mt-2 mb-4">
           Join a fast-growing community of developers and innovators connected all over the world.
           The project is open-source and maintained by the Community. You can for example make
           changes to this site, suggest awesome new features, or help us squash bugs. Not a
@@ -132,7 +132,7 @@
       </div>
     </div>
     <div
-      class="p-4 rounded-lg  md:rounded-tl-3xl lg:rounded-tl-lg lg:rounded-tr-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg  md:rounded-tl-3xl lg:rounded-tl-lg lg:rounded-tr-3xl border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -145,7 +145,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg lg:rounded-tl-3xl border dark:border-neutral-700/50 border-neutral-300 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg lg:rounded-tl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
