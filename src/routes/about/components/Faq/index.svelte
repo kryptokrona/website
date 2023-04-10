@@ -1,6 +1,6 @@
 <script>
   import Question from "./Question.svelte";
-  import { questions } from "./questions.js";
+  import { questions } from "./questions";
 
   const seoData = `<script type="application/ld+json">{
       "@context": "https://schema.org",

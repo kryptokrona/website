@@ -10,7 +10,7 @@ const config = {
 		csp: {
 			mode: 'nonce',
 			directives: {
-				"script-src": ['self'],
+				"script-src": ['self', 'cdn.vercel-insights.com', 'plausible.io'],
 				"base-uri": ['self'],
 				"font-src": ['self'],
 				"form-action": ['self'],
