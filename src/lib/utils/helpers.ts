@@ -4,6 +4,7 @@ export const fetchNode = async (url1: string, url2: string, url3: string): Promi
 	return await Promise.any([
 		fetch(url1).then(res => res.json()),
 		fetch(url2).then(res => res.json()),
+		fetch(url3).then(res => res.json()),
 	]).then(data => {
 		return data
 	})
