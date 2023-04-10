@@ -1,17 +1,12 @@
-export const fetchNode = async (url1: string, url2: string): Promise<NodeData> => {
+export const fetchNode = async (url1: string, url2: string, url3: string): Promise<NodeData> => {
 	if(!url1 || !url2) return
 
-	const results = await Promise.allSettled([
+	return await Promise.any([
 		fetch(url1).then(res => res.json()),
 		fetch(url2).then(res => res.json()),
-	])
-	const [node1, node2] = results
-
-	if(node1.status === 'fulfilled') {
-		return node1.value
-	} else if(node2.status === 'fulfilled') {
-		return node2.value
-	} else 	throw new Error("Couldn't fetch nodes");
+	]).then(data => {
+		return data
+	})
 };
 
 export const fetchSupply = async (url: string): Promise<SupplyData> => {

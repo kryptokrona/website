@@ -8,7 +8,7 @@ export async function load() {
 		const directus = await getDirectusClient();
 
 		const [node, supply, blog] = await Promise.all([
-			fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo'),
+			fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo', 'http://techy.ddns.net:11898/getinfo'),
 			fetchSupply('https://blocksum.org/api/v1/supply'),
 			directus.items('posts').readByQuery({
 				fields: ['*'],
