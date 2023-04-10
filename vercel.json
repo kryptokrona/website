@@ -8,6 +8,35 @@
       "source": "/stats/api/event",
       "destination": "https://plausible.io/api/event"
     }
+  ],
+  "headers": [
+    {
+      "source": "/about",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=86400, stale-while-revalidate=59"
+        }
+      ]
+    },
+    {
+      "source": "/mining",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=86400, stale-while-revalidate=59"
+        }
+      ]
+    },
+    {
+      "source": "/wallet",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=86400, stale-while-revalidate=59"
+        }
+      ]
+    }
   ]
 }
 
