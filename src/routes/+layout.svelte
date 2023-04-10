@@ -7,14 +7,12 @@
 	import { inject } from '@vercel/analytics';
 	import { Toaster } from 'svelte-french-toast';
 	import { fade } from 'svelte/transition';
+  import { page } from '$app/stores';
+  import { quadInOut } from 'svelte/easing';
 
 	import '../app.css';
-	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
-	import { quadInOut } from 'svelte/easing';
 
 	export let data;
-	let startAnimation;
 
 	nodeData.set(data.node);
 	blogPosts.set(data.posts);
@@ -22,9 +20,6 @@
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	onMount(() => {
-		startAnimation = true;
-	});
 </script>
 
 <Toaster />
