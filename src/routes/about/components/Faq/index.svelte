@@ -41,7 +41,7 @@ ${'<'}/script>`
 		<dl
 			class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10"
 		>
-			{#each content as item}
+			{#each questions as item}
         <Question data={item}/>
 			{/each}
 		</dl>
