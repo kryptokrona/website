@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 py-32 sm:py-36">
+<div class="max-w-6xl w-full mx-auto mt-6 px-4 xl:px-2 h-20 pb-32 pt-16 sm:py-36">
 	<div>
 		{#if supply}
 			<p
