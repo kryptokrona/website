@@ -1,5 +1,5 @@
 <script>
-  import LastBlock from "$lib/components/LastBlock.svelte";
+  import LastBlock from "$lib/components/home/LastBlock.svelte";
 </script>
 
 <div class="relative isolate">

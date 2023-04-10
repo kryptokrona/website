@@ -1,10 +1,9 @@
 <script>
-  import LatestPosts from "$lib/components/blog/LatestPosts.svelte";
-  import Grid from "$lib/components/Grid.svelte";
+  import Grid from "$lib/components/home/Grid.svelte";
   import Statusbar from "$lib/components/Statusbar.svelte";
-  import Features from "$lib/components/Features.svelte";
-  import OrganisationLdJson from "$lib/components/seo/OrganisationLdJson.svelte";
-  import Header from "$lib/components/Header.svelte";
+  import Features from "$lib/components/home/Features.svelte";
+  import Header from "$lib/components/home/Header.svelte";
+  import OrganisationLdJson from "$lib/seo/OrganisationLdJson.svelte";
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script>
-  import Signup from "$lib/components/Signup.svelte";
+  import Signup from "$lib/layout/Signup.svelte";
 
   export const getPostDate = (timestamp) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",

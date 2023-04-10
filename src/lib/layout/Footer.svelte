@@ -33,7 +33,7 @@
             <h3 class="text-sm font-semibold leading-6 text-neutral-900 dark:text-neutral-200">Navigation</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="/" class="text-sm leading-6 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400">Home</a>
+                <a href="/static" class="text-sm leading-6 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400">Home</a>
               </li>
 
               <li>
