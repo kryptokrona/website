@@ -13,6 +13,7 @@
   import { fetchNode, fetchSupply } from "$lib/utils/helpers";
 
 	import '../app.css';
+  import { CONFIG } from "$lib/config";
 
 	export let data;
 
@@ -23,12 +24,12 @@
   supplyData.set(data.supply);
 
   onMount(async () => {
-    nodeData.set(await fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo'));
-    supplyData.set(await fetchSupply('https://blocksum.org/api/v1/supply'));
+    nodeData.set(await fetchNode(CONFIG.NODE_ONE, CONFIG.NODE_TWO));
+    supplyData.set(await fetchSupply(CONFIG.SUPPLY_API));
     setInterval(async () => {
-      nodeData.set(await fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo'));
-      supplyData.set(await fetchSupply('https://blocksum.org/api/v1/supply'));
-    }, 1000 * 10)
+      nodeData.set(await fetchNode(CONFIG.NODE_ONE, CONFIG.NODE_TWO));
+      supplyData.set(await fetchSupply(CONFIG.SUPPLY_API));
+    }, 1000 * 30)
   })
 
 </script>
