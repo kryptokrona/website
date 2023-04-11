@@ -14,6 +14,7 @@
 
 	import '../app.css';
   import { CONFIG } from "$lib/config";
+  import DiscordPopup from "$lib/components/DiscordPopup.svelte";
 
 	export let data;
 
@@ -35,6 +36,7 @@
 </script>
 
 <Toaster />
+<DiscordPopup />
 
 <Navbar />
 {#key $page.url.href}
