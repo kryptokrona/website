@@ -8,17 +8,17 @@
   <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
     <div class="overflow-hidden rounded-lg dark:bg-neutral-800 border border-neutral-700 px-4 py-5 shadow sm:p-6">
       <dt class="truncate text-sm font-medium dark:text-gray-50">Hashrate</dt>
-      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{prettifyHashrate($nodeData.hashrate, 2)}</dd>
+      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900 dark:text-neutral-50">{prettifyHashrate($nodeData.hashrate, 2)}</dd>
     </div>
 
     <div class="overflow-hidden rounded-lg dark:bg-neutral-800 border border-neutral-700 px-4 py-5 shadow sm:p-6">
       <dt class="truncate text-sm font-medium dark:text-gray-50">Last reward</dt>
-      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{$supplyData.calculatedReward ? $supplyData.calculatedReward : "No data"}</dd>
+      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900 dark:text-neutral-50">{$supplyData.calculatedReward ? $supplyData.calculatedReward : "No data"}</dd>
     </div>
 
     <div class="overflow-hidden rounded-lg dark:bg-neutral-800 border border-neutral-700 px-4 py-5 shadow sm:p-6">
       <dt class="truncate text-sm font-medium dark:text-gray-50">Difficulty</dt>
-      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{getReadableDifficultyString($nodeData.difficulty, 3)}</dd>
+      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900 dark:text-neutral-50">{getReadableDifficultyString($nodeData.difficulty, 3)}</dd>
     </div>
   </dl>
 </div>
