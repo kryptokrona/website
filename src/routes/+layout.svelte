@@ -22,12 +22,13 @@
   blogPosts.set(data.posts);
   supplyData.set(data.supply);
 
-  onMount(() => {
+  onMount(async () => {
+    nodeData.set(await fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo'));
+    supplyData.set(await fetchSupply('https://blocksum.org/api/v1/supply'));
     setInterval(async () => {
-      nodeData.set(await fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo', 'http://techy.ddns.net:11898/getinfo'));
+      nodeData.set(await fetchNode('https://blocksum.org/api/getinfo', 'https://privacymine.net:21898/getinfo'));
       supplyData.set(await fetchSupply('https://blocksum.org/api/v1/supply'));
     }, 1000 * 10)
-
   })
 
 </script>
