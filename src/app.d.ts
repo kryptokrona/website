@@ -35,11 +35,13 @@ declare global {
 	interface SupplyData {
 		"lastCheck": number,
 		"circulatingUnits": number,
+		latestBlockRewardUnits: number
 		"maxUnits": number,
 		"coinUnits": number,
 		"decimals": number,
 		"calculatedSupply": number,
 		"calculatedMaxSupply": number
+		"calculatedReward": number
 	}
 
 	interface WalletsData {
