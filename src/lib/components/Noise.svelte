@@ -9,8 +9,8 @@
     z-index: -2;
     background-repeat: repeat;
     background-image: url('/grain.gif');
-    background-size: 25%;
-    opacity: 0.1;
+    background-size: 20%;
+    opacity: 0.2;
     mix-blend-mode: overlay;
   }
 </style>
