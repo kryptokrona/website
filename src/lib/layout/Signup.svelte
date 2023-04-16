@@ -16,8 +16,7 @@
 			Sign up to our newsletter.
 		</h2>
 		<p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 dark:text-gray-300">
-			Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et
-			culpa.
+      Stay informed and engaged with our comprehensive news updates, informative articles, and thought-provoking insights – delivered straight to your inbox.
 		</p>
 		<form class="mx-auto mt-10 flex max-w-md gap-x-4" method="post" use:enhance>
 			<label class="sr-only" for="email-address">Email address</label>
