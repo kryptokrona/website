@@ -13,4 +13,10 @@
     opacity: 0.2;
     mix-blend-mode: overlay;
   }
+
+  @media (max-width: 768px) {
+    .noise {
+      opacity: 0;
+    }
+  }
 </style>
