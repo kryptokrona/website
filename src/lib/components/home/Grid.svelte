@@ -61,7 +61,7 @@
       </div>
     </div>
     <div
-      class="p-4 rounded-lg lg:rounded-br-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg lg:rounded-br-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg
@@ -87,7 +87,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg
@@ -112,7 +112,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-tr-3xl lg:rounded-tr-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg md:rounded-tr-3xl lg:rounded-tr-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg
@@ -137,7 +137,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-tl-3xl lg:rounded-tl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg md:rounded-tl-3xl lg:rounded-tl-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg

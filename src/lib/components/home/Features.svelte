@@ -1,7 +1,7 @@
 <div class="max-w-6xl mx-auto pt-16 px-4 xl:px-2">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
-      class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl border border-neutral-700 dark:shadow-xl shadow-md "
+      class="p-4 rounded-lg md:rounded-br-3xl lg:rounded-br-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md "
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -14,7 +14,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg md:rounded-bl-3xl lg:rounded-bl-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -132,7 +132,7 @@
       </div>
     </div>
     <div
-      class="p-4 rounded-lg  md:rounded-tl-3xl lg:rounded-tl-lg lg:rounded-tr-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg  md:rounded-tl-3xl lg:rounded-tl-lg lg:rounded-tr-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
@@ -145,7 +145,7 @@
       </p>
     </div>
     <div
-      class="p-4 rounded-lg lg:rounded-tl-3xl border border-neutral-700 dark:shadow-xl shadow-md"
+      class="p-4 rounded-lg lg:rounded-tl-3xl dark:bg-neutral-900 border border-neutral-700 dark:shadow-xl shadow-md"
     >
       <h2 class="text-2xl font-bold dark:text-neutral-50 tracking-tight">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mb-1">
