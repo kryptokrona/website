@@ -6,11 +6,11 @@
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -5;
+    z-index: -2;
     background-repeat: repeat;
     background-image: url('/grain.gif');
     background-size: 25%;
-    opacity: 0.2;
+    opacity: 0.1;
     mix-blend-mode: overlay;
   }
 </style>
