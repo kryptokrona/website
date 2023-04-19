@@ -37,7 +37,7 @@ async function getLatest() {
         })
     });
     const data = await response.json()
-    getByBlockHash(data.result.block_header.hash)
+    await getByBlockHash(data.result.block_header.hash)
 }
 
 async function getByBlockHash(hash: string) {
