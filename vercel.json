@@ -1,5 +1,5 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/en/faucet",
       "destination": "https://faucet.kryptokrona.org"
@@ -14,11 +14,41 @@
     },
     {
       "source": "/stats/js/script.js",
-      "destination": "https://plausible.io/js/script.outbound-links.js"
+      "destination": "https://plausible.io/js/script.js"
     },
     {
       "source": "/stats/api/event",
       "destination": "https://plausible.io/api/event"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/stats/js/script.js",
+      "destination": "https://plausible.io/js/script.js"
+    },
+    {
+      "source": "/stats/api/event",
+      "destination": "https://plausible.io/api/event"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "sdk.kryptokrona.org"
+        }
+      ],
+      "destination": "https://kryptokrona.github.io/kryptokrona-kotlin-sdk/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "api.sdk.kryptokrona.org"
+        }
+      ],
+      "destination": "https://kryptokrona-kotlin-sdk.vercel.app/:path*"
     }
   ],
   "headers": [
@@ -33,4 +63,5 @@
     }
   ]
 }
+
 
