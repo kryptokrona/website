@@ -10,14 +10,14 @@ const config = {
 		csp: {
 			mode: 'nonce',
 			directives: {
-				"script-src": ['self', 'cdn.vercel-insights.com', 'plausible.io'],
+				"script-src": ['self', 'cdn.vercel-insights.com', 'plausible.io', 'vercel.live'],
 				"base-uri": ['self'],
 				"font-src": ['self'],
 				"form-action": ['self'],
 				"frame-ancestors": ['none'],
 				"frame-src": ['self'],
 				"manifest-src": ['self'],
-				"media-src": ['self'],
+				"media-src": ['self', 'railway.app'],
 				"object-src": ['none'],
 				"upgrade-insecure-requests": true
 			}

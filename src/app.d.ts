@@ -1,11 +1,61 @@
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 declare global {
+
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
-		// interface PageData {}
 		// interface Platform {}
+
+
+		interface Locals {
+			user: User | null
+		}
+	}
+
+	interface PageData {
+		posts: blog.data,
+		post: PostData
+		node: NodeData,
+		supply: SupplyData,
+		user?: User
+	}
+
+	interface PostData {
+		content: string
+		extra: {
+			body: string
+			date_created: string
+			date_updated: string
+			slug: string
+			sort: any
+			status: string
+			summary: string
+			thumbnail: string
+			title:string
+			user_created:string
+			user_updated:string
+			reactions: Array
+			comments: Array
+		}
+	}
+
+	interface SupplyData {
+		"lastCheck": number,
+		"circulatingUnits": number,
+		latestBlockRewardUnits: number
+		"maxUnits": number,
+		"coinUnits": number,
+		"decimals": number,
+		"calculatedSupply": number,
+		"calculatedMaxSupply": number
+		"calculatedReward": number
+	}
+
+
+	type User = {
+		id: number,
+		email: string,
+		role: string
 	}
 
 	interface NodeData {
@@ -32,17 +82,6 @@ declare global {
 		"white_peerlist_size": number
 	}
 
-	interface SupplyData {
-		"lastCheck": number,
-		"circulatingUnits": number,
-		latestBlockRewardUnits: number
-		"maxUnits": number,
-		"coinUnits": number,
-		"decimals": number,
-		"calculatedSupply": number,
-		"calculatedMaxSupply": number
-		"calculatedReward": number
-	}
 
 	interface WalletsData {
 		title: string,

@@ -1,4 +1,5 @@
-import {getDirectusClient} from "$lib/utils/directus";
+import { getDirectusClient } from "$lib/directus/client";
+
 
 /** @type {import('./$types').Actions} */
 export const actions = {

@@ -13,18 +13,17 @@
     return `${day} ${month} ${year}`
   }
 
-  export let data
-
   onMount(() => {
     console.log($blogPosts);
   })
+
 </script>
 
-<div class="h-full w-full overflow-y-scroll py-32 sm:py-36 lg:py-40">
+<div class="h-full w-full py-32 sm:py-36 lg:py-40">
   <div class="text-white mx-auto max-w-6xl px-4 xl:px-2">
     <div class="mb-10">
       <p class="text-base font-semibold leading-7 text-neutral-300">Stay upto date</p>
-      <h2 class="mt-2 text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-6xl">Kryptokrona blog</h2>
+      <h2 class="mt-2 text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 sm:text-6xl">Blog</h2>
       <p class="mt-6 text-lg leading-8 text-neutral-500">Here we delve into the world of
         privacy-enhancing technologies and their potential to protect individuals' digital rights. In a time where data
         breaches and privacy violations have become commonplace, it is more important than ever to explore innovative
@@ -35,7 +34,7 @@
         the digital age.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {#each data.posts.data ?? [] as post}
+      {#each $blogPosts ?? [] as post}
         <a href="/blog/{post.slug}" class="mb-5 sm:mb-10 group">
           <article>
             <div class="bg-zinc-800 p-4 rounded border border-zinc-700 h-48 sm:group-hover:scale-105 transition"></div>

@@ -13,7 +13,7 @@ export const generateConfig = (address) => {
     })
 }
 
-function randomPool(array) {
+function randomPool(array: Array<any>) {
   const random = Math.floor(Math.random() * array.length)
   return array[random]
 }

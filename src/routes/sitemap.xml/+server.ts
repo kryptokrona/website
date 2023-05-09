@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@sveltejs/kit'
-import { getDirectusClient } from "../../lib/utils/directus";
+
 
 /*let blogPosts: ManyItems<unknown, { fields: string[] }> = []
 const directus = await getDirectusClient();
