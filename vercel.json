@@ -38,7 +38,7 @@
           "value": "sdk.kryptokrona.org"
         }
       ],
-      "destination": "https://kryptokrona.github.io/kryptokrona-kotlin-sdk/:path*"
+      "destination": "https://kryptokrona-kotlin-sdk.vercel.app/:path*"
     },
     {
       "source": "/:path*",
