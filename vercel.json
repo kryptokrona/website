@@ -23,32 +23,14 @@
   ],
   "rewrites": [
     {
-      "source": "/stats/js/script.js",
-      "destination": "https://plausible.io/js/script.js"
-    },
-    {
-      "source": "/stats/api/event",
-      "destination": "https://plausible.io/api/event"
-    },
-    {
-      "source": "/:path*",
+      "source": "/(.*)",
+      "destination": "https://kryptokrona-kotlin-sdk.vercel.app/$1",
       "has": [
         {
           "type": "host",
           "value": "sdk.kryptokrona.org"
         }
-      ],
-      "destination": "https://kryptokrona-kotlin-sdk.vercel.app/:path*"
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "api.sdk.kryptokrona.org"
-        }
-      ],
-      "destination": "https://kryptokrona.github.io/kryptokrona-kotlin-sdk/:path*"
+      ]
     }
   ],
   "headers": [
