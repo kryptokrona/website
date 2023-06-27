@@ -3,8 +3,14 @@ import { getDirectusClient } from '../lib/utils/directus';
 import { fetchNode } from '$lib/utils/helpers';
 import { fetchSupply } from '../lib/utils/helpers';
 import { CONFIG } from "../lib/config";
+import { redirect } from '@sveltejs/kit';
 
-export async function load() {
+export async function load({url}) {
+	
+	if(url.pathname == "/en" || 
+		url.pathname == "/sv" || 
+		url.pathname == "/no") throw redirect(307, "/")
+
 	try {
 		const directus = await getDirectusClient();
 			const [node, supply, blog, roadmap] = await Promise.all([
