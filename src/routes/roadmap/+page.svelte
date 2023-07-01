@@ -14,7 +14,10 @@
 	import Description from './components/Description.svelte';
 </script>
 
-<Header title={$roadmap.title} text={$roadmap.text} subtitle={$roadmap.subtitle} />
+<div class="text-center">
+	<Header title={$roadmap.title} text={$roadmap.text} subtitle={$roadmap.subtitle} />
+</div>
+
 <div class="pt-4" />
 <Timeline position="alternate">
 	{#each $roadmap.roadpoints as option, i}
