@@ -84,7 +84,9 @@
 			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/about"
 				>About</a
 			>
-
+			<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50" href="/roadmap"
+				>Roadmap</a
+			>
 			<a
 				class="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-50"
 				href="https://hugin.chat">Hugin <span aria-hidden="true">&rarr;</span></a
@@ -172,6 +174,11 @@
 								href="/about"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
 								>About</a
+							>
+							<a
+								href="/roadmap"
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								>Roadmap</a
 							>
 						</div>
 						<div class="py-6">
