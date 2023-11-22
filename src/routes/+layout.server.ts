@@ -13,7 +13,7 @@ export async function load({url}) {
 
 	try {
 		const directus = await getDirectusClient();
-			const [node, supply, blog, roadmap] = await Promise.all([
+			const [node, supply, blog] = await Promise.all([
 				fetchNode(CONFIG.NODE_ONE, CONFIG.NODE_TWO),
 				fetchSupply(CONFIG.SUPPLY_API),
 				directus.items('posts').readByQuery({
@@ -26,7 +26,7 @@ export async function load({url}) {
 
 				directus.items('Roadmap').readByQuery({})
 			]);
-		return { posts: blog.data, node, supply, roadmap: roadmap.data };
+		return { posts: blog.data, node, supply };
 	} catch (e) {
 		throw error(500, {
 			message: 'Error while fetching data'

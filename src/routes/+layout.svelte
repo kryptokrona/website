@@ -2,7 +2,7 @@
 	import Footer from '$lib/layout/Footer.svelte';
 	import Navbar from '$lib/layout/Navbar.svelte';
 	import Signup from '$lib/layout/Signup.svelte';
-	import { blogPosts, nodeData, supplyData, roadmap } from '$lib/stores/data';
+	import { blogPosts, nodeData, supplyData } from '$lib/stores/data';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 	import { Toaster } from 'svelte-french-toast';
@@ -26,7 +26,6 @@
 	nodeData.set(data.node);
 	blogPosts.set(data.posts);
 	supplyData.set(data.supply);
-	roadmap.set(data.roadmap);
 	// userData.set(data.user)
 
 	onMount(async () => {
