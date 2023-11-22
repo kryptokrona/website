@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		Timeline,
 		TimelineItem,
@@ -10,17 +10,17 @@
 	} from 'svelte-vertical-timeline';
 	import Header from './components/Header.svelte';
 	import { isDarkModeActive } from '$lib/utils/helpers';
-	import { roadmap } from '$lib/stores/data';
 	import Description from './components/Description.svelte';
+  import { roadmap } from "$lib/data/roadmap";
 </script>
 
 <div class="text-center">
-	<Header title={$roadmap.title} text={$roadmap.text} subtitle={$roadmap.subtitle} />
+	<Header title={roadmap.title} text={roadmap.text} subtitle={roadmap.subtitle} />
 </div>
 
 <div class="pt-4" />
 <Timeline position="alternate">
-	{#each $roadmap.roadpoints as option, i}
+	{#each roadmap as option, i}
 		<TimelineItem>
 			<TimelineOppositeContent slot="opposite-content">
 				<p>{option.time}</p>
