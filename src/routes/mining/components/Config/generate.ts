@@ -1,24 +1,26 @@
-export const generateConfig = (address) => {
-  // fetches the array of pools
-  fetch("https://raw.githubusercontent.com/Swepool/kryptokrona-pools/main/pools.json")
-    .then(res => res.json())
-    .then(data => {
-      //if there's something we generate a file, this could be improved.. for example check the address.
-      if (address) {
-        downloadObjectAsJson(generateFile(randomPool(data.pools), address), "config")
-      } else {
-        //if empty send alert
-        alert("Fill in wallet address to generate config.json")
-      }
-    })
+export const generateConfig = (address: string): void => {
+
+  const pools: string[] = [
+    'swepool.org:3333',
+    'techy.ddns.net:3333',
+    'fastpool.xyz:10092'
+  ]
+
+  if (address) {
+    const pool = randomPool(pools)
+    const config = generateFile(pool, address)
+    downloadObjectAsJson(config, 'config')
+  } else {
+    alert("Fill in wallet address to generate config.json")
+  }
 }
 
-function randomPool(array) {
+function randomPool(array: string[]): string {
   const random = Math.floor(Math.random() * array.length)
   return array[random]
 }
 
-function downloadObjectAsJson(exportObj, exportName) {
+function downloadObjectAsJson(exportObj: any, exportName: string): void {
   const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
   const downloadAnchorNode = document.createElement('a');
   downloadAnchorNode.setAttribute("href", dataStr);
@@ -28,7 +30,7 @@ function downloadObjectAsJson(exportObj, exportName) {
   downloadAnchorNode.remove();
 }
 
-function generateFile(pool, user) {
+function generateFile(pool: string, user: string): any {
   return JSON.parse(
     `{
     "api": {"id": null, "worker-id": null},
