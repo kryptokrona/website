@@ -8,6 +8,17 @@ declare global {
 		// interface Platform {}
 	}
 
+	interface OrgSeoData {
+		'@context': string;
+		'@type': string;
+		'@id': string;
+		url: string;
+		name: string;
+		logo: string;
+		description: string;
+		sameAs: string[];
+	}
+
 	interface NodeData {
 		"alt_blocks_count": number,
 		"difficulty": number,
