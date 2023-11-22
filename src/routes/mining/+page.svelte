@@ -9,5 +9,5 @@
 <Header />
 <Stats />
 <Config />
-<Statusbar />
 <Faq />
+<Statusbar />

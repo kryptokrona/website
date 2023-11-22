@@ -4,7 +4,7 @@
   let address
 </script>
 
-<div class="py-16 sm:py-24 dark:bg-neutral-800 sm:bg-transparent">
+<div class="py-4 dark:bg-neutral-800 sm:bg-transparent">
   <div class="mx-auto max-w-6xl px-4 xl:px-2">
     <div class="mx-auto grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8 p-4 sm:p-8 rounded-lg dark:sm:bg-neutral-800 sm:border border-neutral-700">
       <div class="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
