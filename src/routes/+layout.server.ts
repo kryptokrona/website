@@ -1,11 +1,11 @@
-import { error } from '@sveltejs/kit';
+import { error, ServerLoad } from "@sveltejs/kit";
 import { getDirectusClient } from '../lib/utils/directus';
 import { fetchNode } from '$lib/utils/helpers';
 import { fetchSupply } from '../lib/utils/helpers';
 import { CONFIG } from "../lib/config";
 import { redirect } from '@sveltejs/kit';
 
-export async function load({url}) {
+export const load: ServerLoad = async ({url}) => {
 	
 	if(url.pathname == "/en" || 
 		url.pathname == "/sv" || 
