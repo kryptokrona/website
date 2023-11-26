@@ -24,17 +24,15 @@
 	inject({ mode: dev ? 'development' : 'production' });
 
 	nodeData.set(data.node);
-	blogPosts.set(data.posts);
 	supplyData.set(data.supply);
-	// userData.set(data.user)
 
 	onMount(async () => {
-		nodeData.set(await fetchNode(CONFIG.NODE_ONE, CONFIG.NODE_TWO));
+/*		nodeData.set(await fetchNode());
 		supplyData.set(await fetchSupply(CONFIG.SUPPLY_API));
 		setInterval(async () => {
-			nodeData.set(await fetchNode(CONFIG.NODE_ONE, CONFIG.NODE_TWO));
+			nodeData.set(await fetchNode());
 			supplyData.set(await fetchSupply(CONFIG.SUPPLY_API));
-		}, 1000 * 30);
+		}, 1000 * 30);*/
 
 		setTimeout(() => {
 			loading = false;
