@@ -1,4 +1,5 @@
 import { error, json } from "@sveltejs/kit";
+import { CONFIG } from "$lib/config";
 
 let timestamp: number
 let SUPPLY: number
@@ -23,7 +24,7 @@ export async function GET() {
     }
 }
 async function getLatest() {
-    const response = await fetch('https://blocksum.org/api/json_rpc', {
+    const response = await fetch(`${CONFIG.NODE_ONE}/json_rpc`, {
         method: 'POST',
         cache: 'no-cache',
         redirect: 'follow',
@@ -41,7 +42,7 @@ async function getLatest() {
 }
 
 async function getByBlockHash(hash: string) {
-    const response = await fetch('https://blocksum.org/api/json_rpc', {
+    const response = await fetch(`${CONFIG.NODE_ONE}/json_rpc`, {
         method: 'POST',
         cache: 'no-cache',
         redirect: 'follow',

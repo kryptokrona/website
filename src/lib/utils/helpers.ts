@@ -2,8 +2,8 @@ import { browser } from '$app/environment';
 
 export const fetchNode = async (url1: string, url2: string): Promise<NodeData> => {
 	return Promise.any([
-		fetch(url1).then(res => res.json()),
-		fetch(url2).then(res => res.json()),
+		fetch(`${url1}/getinfo`).then(res => res.json()),
+		fetch(`${url2}/getinfo`).then(res => res.json()),
 	]);
 };
 
