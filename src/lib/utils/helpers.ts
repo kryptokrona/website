@@ -3,15 +3,15 @@ import { browser } from '$app/environment';
 export const fetchNode = async (): Promise<NodeData> => {
 	try {
 		return await Promise.any([
-			fetch(`http://xkr.network:11898/getinfo`).then(res => {
+			fetch(`http://blocksum.org:11898/getinfo`).then(res => {
 				if (!res.ok) {
-					throw new Error(`Error fetching from http://xkr.network:11898: ${res.statusText}`);
+					throw new Error(`Error fetching from http://blocksum.org:11898: ${res.statusText}`);
 				}
 				return res.json();
 			}),
-			fetch(`http://xkr.network:11898/getinfo`).then(res => {
+			fetch(`http://blocksum.org:11898/getinfo`).then(res => {
 				if (!res.ok) {
-					throw new Error(`Error fetching from http://xkr.network:11898: ${res.statusText}`);
+					throw new Error(`Error fetching from http://blocksum.org:11898: ${res.statusText}`);
 				}
 				return res.json();
 			}),
