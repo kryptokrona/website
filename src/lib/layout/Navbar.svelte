@@ -95,11 +95,10 @@
 	</nav>
 	<!-- Mobile menu, show/hide based on menu open state. -->
 	{#if open}
-		<div transition:fade class="lg:hidden z-50" role="dialog" aria-modal="true">
+		<div transition:fade class="lg:hidden z-50 w-full" role="dialog" aria-modal="true">
 			<!-- Background backdrop, show/hide based on slide-over state. -->
-			<div class="fixed inset-0 z-10" />
 			<div
-				class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto dark:bg-neutral-900/80 backdrop-blur-md p-4 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+				class="fixed top-0 border-b dark:border-neutral-50/10 border-neutral-700 w-full z-10 dark:bg-neutral-900 bg-neutral-50 p-4 py-5 sm:ring-1 sm:ring-gray-900/10"
 			>
 				<div class="flex items-center justify-between">
 					<a href="#" class="-m-1.5 p-1.5">
@@ -114,9 +113,10 @@
 						>
 							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 								<g
+									class="dark:stroke-neutral-50 stroke-neutral-900"
 									id="Post-Copy"
 									transform="translate(-130.000000, -77.000000)"
-									stroke="#FFFFFF"
+									
 									stroke-width="4.93714286"
 								>
 									<path
@@ -146,19 +146,19 @@
 					</button>
 				</div>
 				<div class="mt-6 flow-root">
-					<div class="-my-6 divide-y divide-gray-500/10">
+					<div class="-my-6 divide-y divide-neutral-700 dark:divide-gray-500/10">
 						<div class="space-y-2 py-6">
 							<a
 								data-sveltekit-preload-data
 								href="/"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 hover:dark:bg-gray-50 hover:dark:text-gray-900"
 								>Home</a
 							>
 
 							<a
 								data-sveltekit-preload-data
 								href="/wallet"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 hover:dark:bg-gray-50 hover:dark:text-gray-900"
 								>Wallet</a
 							>
 
@@ -172,19 +172,19 @@
 							<a
 								data-sveltekit-preload-data
 								href="/about"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 hover:dark:bg-gray-50 hover:dark:text-gray-900"
 								>About</a
 							>
 							<a
 								href="/roadmap"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 hover:dark:bg-gray-50 hover:dark:text-gray-900"
 								>Roadmap</a
 							>
 						</div>
 						<div class="py-6">
 							<a
 								href="https://hugin.chat"
-								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-gray-50"
+								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-neutral-50 hover:bg-neutral-900 hover:text-neutral-50 hover:dark:bg-gray-50 hover:dark:text-gray-900"
 								>Hugin</a
 							>
 						</div>
