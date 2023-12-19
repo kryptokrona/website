@@ -9,9 +9,9 @@ export const fetchNode = async (): Promise<NodeData> => {
 				}
 				return res.json();
 			}),
-			fetch(`http://blocksum.org:11898/getinfo`).then(res => {
+			fetch(`http://xkr.network:11898/getinfo`).then(res => {
 				if (!res.ok) {
-					throw new Error(`Error fetching from http://blocksum.org:11898: ${res.statusText}`);
+					throw new Error(`Error fetching from http://xkr.network:11898: ${res.statusText}`);
 				}
 				return res.json();
 			}),
@@ -23,15 +23,28 @@ export const fetchNode = async (): Promise<NodeData> => {
 };
 
 export const fetchSupply = async (url: string): Promise<SupplyData> => {
+	
 	try {
 		const res = await fetch(url);
 		if (!res.ok) {
-			throw new Error(`Couldn't fetch supply from http://xkr.network:11898: ${res.statusText}`);
+			//Error -> catch
 		}
 		return res.json();
 	} catch (error) {
 		console.error("Error in fetchSupply:", error);
-		throw error;
+		//throw error;
+		//Return empty to avoid errors
+		return {
+			"lastCheck": 0,
+			"circulatingUnits": 0,
+			"latestBlockRewardUnits": 0,
+			"maxUnits": 0,
+			"coinUnits": 0,
+			"decimals": 0,
+			"calculatedSupply": 0,
+			"calculatedMaxSupply": 0,
+			"calculatedReward": 0
+		}
 	}
 };
 
