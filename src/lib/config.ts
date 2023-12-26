@@ -19,28 +19,20 @@ export const stableNodes: Node[] = [
   },
   {
     id: 2,
-    name: 'Wasa',
-    url: 'wasa.kryptokrona.se',
-    port: 11898,
-    ssl: false
-  },
-  {
-    id: 3,
     name: 'TechyNode',
     url: 'techy.ddns.net',
     port: 11898,
     ssl: false
   },
-
   {
-    id: 4,
+    id: 3,
     name: 'Privacy Mine',
     url: 'privacymine.net',
     port: 11898,
     ssl: false
   },
   {
-    id: 5,
+    id: 4,
     name: 'XKR Network',
     url: 'node.xkr.network',
     port: 80,
