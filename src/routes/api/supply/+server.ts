@@ -27,15 +27,12 @@ export const GET = async () => {
 
 async function getLatest() {
     const fastestNode = await getFastestNodeResponse();
-
     if (!fastestNode) {
         throw new Error('No responsive node found');
     }
 
-    const {node} = fastestNode
-
-    const protocol = node.ssl ? 'https' : 'http';
-    const url = `${protocol}://${node.url}:${node.port}/json_rpc`;
+    const protocol = fastestNode.node.ssl ? 'https' : 'http';
+    const url = `${protocol}://${fastestNode.node.url}:${fastestNode.node.port}/json_rpc`;
 
     const response = await fetch(url, {
         method: 'POST',
