@@ -1,31 +1,10 @@
 import { browser } from '$app/environment';
+import { supplyUrl } from "$lib/config";
 
-export const fetchNode = async (): Promise<NodeData> => {
-	try {
-		return await Promise.any([
-			fetch(`http://blocksum.org:11898/getinfo`).then(res => {
-				if (!res.ok) {
-					throw new Error(`Error fetching from http://blocksum.org:11898: ${res.statusText}`);
-				}
-				return res.json();
-			}),
-			fetch(`http://xkr.network:11898/getinfo`).then(res => {
-				if (!res.ok) {
-					throw new Error(`Error fetching from http://xkr.network:11898: ${res.statusText}`);
-				}
-				return res.json();
-			}),
-		]);
-	} catch (error) {
-		console.error("Error in fetchNode:", error);
-		throw error;
-	}
-};
-
-export const fetchSupply = async (url: string): Promise<SupplyData> => {
+export const fetchSupply = async (): Promise<SupplyData> => {
 	
 	try {
-		const res = await fetch(url);
+		const res = await fetch(supplyUrl);
 		if (!res.ok) {
 			//Error -> catch
 		}

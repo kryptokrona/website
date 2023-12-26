@@ -1,16 +1,17 @@
 import { error, json } from "@sveltejs/kit";
-import { CONFIG } from "$lib/config";
+import { getFastestNodeResponse } from "$lib/utils/get-node";
 
-let timestamp: number
-let SUPPLY: number
-const MAX = 100000000000000
-const COIN_UNITS = 100000
-const DECIMALS = 5
-export async function GET() {
-    await getLatest()
+let timestamp: number;
+let SUPPLY: number;
+const MAX = 100000000000000;
+const COIN_UNITS = 100000;
+const DECIMALS = 5;
+
+export const GET = async () => {
+    await getLatest();
 
     if (!SUPPLY) {
-        throw error(404, 'Bad request')
+        throw error(404, 'Bad request');
     } else {
         return json({
             lastCheck: timestamp,
@@ -20,11 +21,23 @@ export async function GET() {
             decimals: DECIMALS,
             calculatedSupply: SUPPLY / COIN_UNITS,
             calculatedMaxSupply: MAX / COIN_UNITS,
-        })
+        });
     }
-}
+};
+
 async function getLatest() {
-    const response = await fetch(`${CONFIG.NODE_ONE}/json_rpc`, {
+    const fastestNode = await getFastestNodeResponse();
+
+    if (!fastestNode) {
+        throw new Error('No responsive node found');
+    }
+
+    const {node} = fastestNode
+
+    const protocol = node.ssl ? 'https' : 'http';
+    const url = `${protocol}://${node.url}:${node.port}/json_rpc`;
+
+    const response = await fetch(url, {
         method: 'POST',
         cache: 'no-cache',
         redirect: 'follow',
@@ -33,16 +46,15 @@ async function getLatest() {
             jsonrpc: "2.0",
             id: "test",
             method: "getlastblockheader",
-            params: {
-            }
+            params: {}
         })
     });
-    const data = await response.json()
-    await getByBlockHash(data.result.block_header.hash)
+    const data = await response.json();
+    await getByBlockHash(data.result.block_header.hash, url);
 }
 
-async function getByBlockHash(hash: string) {
-    const response = await fetch(`${CONFIG.NODE_ONE}/json_rpc`, {
+async function getByBlockHash(hash: string, url: string) {
+    const response = await fetch(url, {
         method: 'POST',
         cache: 'no-cache',
         redirect: 'follow',
@@ -51,12 +63,10 @@ async function getByBlockHash(hash: string) {
             jsonrpc: "2.0",
             id: "test",
             method: "f_block_json",
-            params: {
-                hash: hash
-            }
+            params: { hash }
         })
     });
     const data = await response.json();
-    timestamp = Date.now()
-    SUPPLY = data.result.block.alreadyGeneratedCoins
+    timestamp = Date.now();
+    SUPPLY = data.result.block.alreadyGeneratedCoins;
 }
