@@ -21,7 +21,7 @@ export const stableNodes: Node[] = [
     id: 2,
     name: 'Wasa',
     url: 'wasa.kryptokrona.se',
-    port: 2783,
+    port: 11898,
     ssl: false
   },
   {
