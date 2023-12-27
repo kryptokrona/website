@@ -13,7 +13,7 @@ const DECIMALS = 5;
 export const GET = async () => {
     await getLatest();
 
-    if (!supply) {
+    if (!supply || !reward) {
         throw error(404, 'Bad request');
     } else {
         return json({
@@ -26,7 +26,7 @@ export const GET = async () => {
             decimals: DECIMALS,
             calculatedSupply: supply / COIN_UNITS,
             calculatedMaxSupply: MAX_UNITS / COIN_UNITS,
-            calculatedLastReward: reward
+            calculatedLastReward: reward / COIN_UNITS
         });
     }
 };
@@ -72,6 +72,6 @@ async function getByBlockHash(hash: string, url: string) {
     const data = await response.json();
     console.log(data);
     timestamp = Date.now();
-    reward = data.result.block.reward / COIN_UNITS
+    reward = data.result.block.reward
     supply = data.result.block.alreadyGeneratedCoins;
 }
