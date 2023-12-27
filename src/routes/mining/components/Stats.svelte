@@ -13,7 +13,7 @@
 
     <div class="overflow-hidden rounded-lg dark:bg-neutral-800 border border-neutral-700 px-4 py-5 shadow sm:p-6">
       <dt class="truncate text-sm font-medium dark:text-gray-50">Last reward</dt>
-      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900 dark:text-neutral-50">{$supplyData.calculatedReward ? $supplyData.calculatedReward : "No data"}</dd>
+      <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900 dark:text-neutral-50">{$supplyData.calculatedLastReward ? `${$supplyData.calculatedLastReward.toFixed(2)} XKR` : "No data"}</dd>
     </div>
 
     <div class="overflow-hidden rounded-lg dark:bg-neutral-800 border border-neutral-700 px-4 py-5 shadow sm:p-6">
