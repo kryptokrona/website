@@ -2,25 +2,31 @@ import { error, json } from "@sveltejs/kit";
 import { getFastestNodeResponse } from "$lib/utils/get-node";
 
 let timestamp: number;
-let SUPPLY: number;
-const MAX = 100000000000000;
+let supply: number;
+let reward: number
+
+const MAX_UNITS = 100000000000000;
 const COIN_UNITS = 100000;
 const DECIMALS = 5;
+
 
 export const GET = async () => {
     await getLatest();
 
-    if (!SUPPLY) {
+    if (!supply) {
         throw error(404, 'Bad request');
     } else {
         return json({
             lastCheck: timestamp,
-            circulatingUnits: parseInt(String(SUPPLY)),
-            maxUnits: MAX,
+            name: 'Kryptokrona',
+            ticker: 'XKR',
+            circulatingUnits: parseInt(String(supply)),
+            maxUnits: MAX_UNITS,
             coinUnits: COIN_UNITS,
             decimals: DECIMALS,
-            calculatedSupply: SUPPLY / COIN_UNITS,
-            calculatedMaxSupply: MAX / COIN_UNITS,
+            calculatedSupply: supply / COIN_UNITS,
+            calculatedMaxSupply: MAX_UNITS / COIN_UNITS,
+            calculatedLastReward: reward
         });
     }
 };
@@ -64,6 +70,8 @@ async function getByBlockHash(hash: string, url: string) {
         })
     });
     const data = await response.json();
+    console.log(data);
     timestamp = Date.now();
-    SUPPLY = data.result.block.alreadyGeneratedCoins;
+    reward = data.result.block.reward / COIN_UNITS
+    supply = data.result.block.alreadyGeneratedCoins;
 }
