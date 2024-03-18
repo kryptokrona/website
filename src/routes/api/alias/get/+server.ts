@@ -5,6 +5,8 @@ export const GET: RequestHandler = async ({ url }) => {
   const alias = url.searchParams.get('alias');
   const domainId = 'kryptokrona.org';
 
+  return new Response(JSON.stringify({ message: "Service not available" }))
+
   try {
     const response = await fetch(`https://api.vercel.com/v2/domains/${domainId}/records`, {
       headers: { Authorization: `Bearer ${VERCEL_TOKEN}` },

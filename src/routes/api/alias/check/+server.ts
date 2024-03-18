@@ -5,9 +5,11 @@ export const GET: RequestHandler = async ({ url }) => {
   const alias = url.searchParams.get('alias')
   const domainId = 'kryptokrona.org';
 
+  return new Response(JSON.stringify({ message: "Service not available" }))
+
   if (!alias) {
     return new Response(JSON.stringify({ error: 'Alias query parameter is missing' }), {
-      status: 400, // Bad Request
+      status: 400,
       headers: { 'Content-Type': 'application/json' }
     });
   }
