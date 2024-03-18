@@ -1,13 +1,13 @@
 import type { RequestHandler } from './$types';
+import { VERCEL_TOKEN } from "$env/static/private";
 
 export const GET: RequestHandler = async ({ url }) => {
-  const token = 'FGwlYozWYGiyLlzXx1kIskC1';
   const alias = url.searchParams.get('alias');
   const value = url.searchParams.get('value');
 
   try {
     const fetchResponse = await fetch(`https://api.vercel.com/v2/domains/kryptokrona.org/records`, {
-      headers: { Authorization: `Bearer ${token}` },
+      headers: { Authorization: `Bearer ${VERCEL_TOKEN}` },
     });
 
     if (!fetchResponse.ok) {
@@ -28,7 +28,7 @@ export const GET: RequestHandler = async ({ url }) => {
     const setResponse = await fetch(`https://api.vercel.com/v2/domains/kryptokrona.org/records`, {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${VERCEL_TOKEN}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
