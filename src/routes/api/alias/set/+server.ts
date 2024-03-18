@@ -1,10 +1,10 @@
 import type { RequestHandler } from './$types';
 
-export const POST: RequestHandler = async ({ url }) => {
+export const GET: RequestHandler = async ({ url }) => {
   const token = 'FGwlYozWYGiyLlzXx1kIskC1';
   const alias = url.searchParams.get('alias');
   const value = url.searchParams.get('value');
-  
+
   try {
     const fetchResponse = await fetch(`https://api.vercel.com/v2/domains/kryptokrona.org/records`, {
       headers: { Authorization: `Bearer ${token}` },
