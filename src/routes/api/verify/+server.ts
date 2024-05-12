@@ -19,12 +19,12 @@ export const GET: RequestHandler = async ({ url }) => {
   const isVerified = emails.includes(normalizedEmail);
 
   if (isVerified) {
-    return new Response(JSON.stringify({ message: "User is verified" }), {
+    return new Response(JSON.stringify({ message: "User is verified", verified: true }), {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
   } else {
-    return new Response(JSON.stringify({ error: "User is not verified" }), {
+    return new Response(JSON.stringify({ error: "User is not verified", verified: false }), {
       status: 404,
       headers: { "Content-Type": "application/json" }
     });
