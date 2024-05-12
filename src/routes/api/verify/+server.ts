@@ -1,32 +1,38 @@
-import type { RequestHandler } from "./$types";
+import type { RequestHandler } from './$types';
 
-const emails = [
-  "lukas.nyberg@gmail.com"
-].map(email => email.toLowerCase());
+const users = [
+  {
+    email: 'lukas.nyberg@gmail.com',
+    telegram: 'luknyb',
+    discord: 'luknyb'
+  }
+];
 
 export const GET: RequestHandler = async ({ url }) => {
-  const emailToVerify = url.searchParams.get("email");
+  const valueToVerify = url.searchParams.get('value');
 
-  if (!emailToVerify) {
-    return new Response(JSON.stringify({ error: "Please add email parameter to URL, e.g., https://kryptokrona.org/api/verify?email=john.smith@mail.com" }), {
+  if (!valueToVerify) {
+    return new Response(JSON.stringify({ error: 'Please provide a value to verify using the parameter "value".' }), {
       status: 400,
-      headers: { "Content-Type": "application/json" }
+      headers: { 'Content-Type': 'application/json' }
     });
   }
 
-  const normalizedEmail = emailToVerify.toLowerCase();
+  const normalizedValue = valueToVerify.toLowerCase();
 
-  const isVerified = emails.includes(normalizedEmail);
+  const verifiedTypes = users.reduce((acc: string[], user) => {
+    if (user.email.toLowerCase() === normalizedValue) acc.push('Email');
+    if (user.telegram.toLowerCase() === normalizedValue) acc.push('Telegram');
+    if (user.discord.toLowerCase() === normalizedValue) acc.push('Discord');
+    return acc;
+  }, []);
 
-  if (isVerified) {
-    return new Response(JSON.stringify({ message: "User is verified", verified: true }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" }
-    });
-  } else {
-    return new Response(JSON.stringify({ error: "User is not verified", verified: false }), {
-      status: 404,
-      headers: { "Content-Type": "application/json" }
-    });
-  }
+  const isVerified = verifiedTypes.length > 0;
+
+  const response = isVerified ? { message: `${verifiedTypes.join(' and ')} is verified.` } : { error: 'No valid identifier provided or identifier is not verified.' };
+
+  return new Response(JSON.stringify(response), {
+    status: isVerified ? 200 : 404,
+    headers: { 'Content-Type': 'application/json' }
+  });
 };
