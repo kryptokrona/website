@@ -2,8 +2,8 @@ export const wallets: WalletsData[] = [
   {
     title: 'Desktop Wallet',
     text: 'Easy to use desktop wallet',
-    download: 'https://github.com/kryptokrona/kryptokrona-desktop-wallet/releases/latest',
-    source: 'https://github.com/kryptokrona/kryptokrona-mobile-wallet',
+    download: 'https://github.com/kryptokrona/aesir-wallet/releases/latest',
+    source: 'https://github.com/kryptokrona/aesir-wallet/',
     os: ['win']
   },
   {
