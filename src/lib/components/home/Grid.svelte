@@ -1,28 +1,28 @@
 <script lang="ts">
   const projects = [
     {
-      name: 'Hugin Messenger',
+      name: 'Hugin Messenger for Desktop',
       url: 'https://github.com/kryptokrona/hugin-desktop',
     },
     {
-      name: 'Yggdrasil wallet',
-      url: 'https://github.com/kryptokrona/yggdrasil-wallet',
+      name: 'Kryptokrona Messenger for Mobile',
+      url: 'https://github.com/kryptokrona/hugin-mobile',
+    }
+    {
+      name: 'Aesir wallet',
+      url: 'https://github.com/kryptokrona/aesir-wallet',
     },
     {
       name: 'Kryptokrona explorer',
       url: 'https://github.com/kryptokrona/svelte-explorer'
     },
     {
-      name: 'Kryptokrona API',
-      url: 'https://github.com/kryptokrona/kryptokrona-api',
+      name: 'Kryptokrona Core',
+      url: 'https://github.com/kryptokrona/kryptokrona',
     },
     {
-      name: 'Kryptokrona kotlin SDK',
-      url: 'https://github.com/kryptokrona/kryptokrona-kotlin-sdk',
-    },
-    {
-      name: 'Kryptokrona faucet',
-      url: 'https://github.com/kryptokrona/kryptokrona-faucet',
+      name: 'Kryptokrona Android Wallet',
+      url: 'https://github.com/kryptokrona/hugin-mobile-wallet',
     }
   ]
 </script>
