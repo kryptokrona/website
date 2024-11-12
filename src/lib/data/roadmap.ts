@@ -56,24 +56,9 @@ export const roadmap: RoadmapData[] = [
     "description": "A new fancy website!"
   },
   {
-    "title": "Kryptokrona Kotlin SDK - Alpha release",
-    "time": "2023 Q1",
-    "description": "A new Kotlin SDK to build upon the Kryptokrona network protocols."
-  },
-  {
     "title": "Multimedia sharing in Hugin",
     "time": "2023 Q2",
     "description": "Sharing images, videos, voice recordings and other media in chat apps is an absolute must these days. We've had such functionality in Hugin Messenger since 2019, but we are now looking to expand these functionalities into a scalable, easy to use and above all safe system that is portable between platforms."
-  },
-  {
-    "title": "Automatic pool deployment",
-    "time": "2023 Q2",
-    "description": "As a drive to make XKR mining pools easier to host, we are looking at making the process of starting a pool as easy as typing in a command into the terminal. This will hopefully lead to greater centralization and thus better security for our network - not to mention minimizing headaches for aspiring pool operators!"
-  },
-  {
-    "title": "Yggdrasil",
-    "time": "2023 Q3",
-    "description": "Yggdrasil is a new state-of-the-art wallet that combines functionality and beauty. Stay tuned for this massive release!"
   },
   {
     "title": "Hugin calls - Android mobile",
@@ -81,18 +66,43 @@ export const roadmap: RoadmapData[] = [
     "description": "As of April 2023 users can enjoy voice & video calls in our Android app."
   },
   {
-    "title": "Kryptokrona Node GUI",
-    "time": "2023 Q4",
-    "description": "To make it easier for beginner users to host their own node, which is best practice for maximum security and performance, a graphical user interface for hosting your own node makes running a node accessible to anyone with a computer."
+    "title": "Xeggex listing",
+    "time": "2024 Q3",
+    "description": "Kryptokrona was listed on Xeggex.com on the 27th of August 2023!"
+  },
+  {
+    "title": "NonKYC.io listing",
+    "time": "2024 Q4",
+    "description": "Kryptokrona was listed on NonKYC.io on 16th July of 2024!"
+  },
+  {
+    "title": "Aesir wallet",
+    "time": "2024 Q4",
+    "description": "Yggdrasil is a new state-of-the-art wallet that combines functionality and beauty. Stay tuned for this massive release!"
+  },
+  {
+    "title": "CoinEx listing",
+    "time": "2024 Q4",
+    "description": "Kryptokrona was listed on CoinEx on 11/11!"
+  },
+  {
+    "title": "P2P upgrade to Hugin Messenger",
+    "time": "2024 Q4",
+    "description": "Hugin Messenger is getting infinite scalability with a new architecture that sends all messages through P2P! This also enables file sharing and many other exciting new functionality!"
   },
   {
     "title": "Hugin + XKR Wallet on iOS",
-    "time": "2023 Q4",
+    "time": "2025 Q1",
+    "description": "With sideloading in iOS anyone can finally build Hugin Messenger for iOS and make sure the right code is running on the machine - which is an absolute necessety for users who demand uncompromized operational security."
+  },
+    {
+    "title": "File sharing for Hugin Mobile",
+    "time": "2025 Q1",
     "description": "With sideloading in iOS anyone can finally build Hugin Messenger for iOS and make sure the right code is running on the machine - which is an absolute necessety for users who demand uncompromized operational security."
   },
   {
-    "title": "Kryptokrona Kotlin SDK - Beta release",
-    "time": "2023 Q4",
-    "description": "A beta release of the Kryptokrona Kotlin SDK."
+    "title": "Tier 1 exchange",
+    "time": "2025 Q2",
+    "description": "We are already talking with some of the most popular exchanges with the hope of making a T1 listing possible ASAP!"
   }
 ]
