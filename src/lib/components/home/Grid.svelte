@@ -7,7 +7,7 @@
     {
       name: 'Kryptokrona Messenger for Mobile',
       url: 'https://github.com/kryptokrona/hugin-mobile',
-    }
+    },
     {
       name: 'Aesir wallet',
       url: 'https://github.com/kryptokrona/aesir-wallet',
