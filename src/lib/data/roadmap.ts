@@ -67,7 +67,7 @@ export const roadmap: RoadmapData[] = [
   },
   {
     "title": "Xeggex listing",
-    "time": "2024 Q3",
+    "time": "2023 Q3",
     "description": "Kryptokrona was listed on Xeggex.com on the 27th of August 2023!"
   },
   {
