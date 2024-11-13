@@ -5,15 +5,15 @@
       url: 'https://github.com/kryptokrona/hugin-desktop',
     },
     {
-      name: 'Kryptokrona Messenger for Mobile',
+      name: 'Hugin Messenger for Mobile',
       url: 'https://github.com/kryptokrona/hugin-mobile',
     },
     {
-      name: 'Aesir wallet',
+      name: 'Aesir Wallet',
       url: 'https://github.com/kryptokrona/aesir-wallet',
     },
     {
-      name: 'Kryptokrona explorer',
+      name: 'Kryptokrona Explorer',
       url: 'https://github.com/kryptokrona/svelte-explorer'
     },
     {
