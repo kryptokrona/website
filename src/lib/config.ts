@@ -19,13 +19,20 @@ export const stableNodes: Node[] = [
   },
   {
     id: 2,
+    name: 'KTH Node',
+    url: 'kth.kryptokrona.se',
+    port: 20176,
+    ssl: true
+  },
+  {
+    id: 3,
     name: 'TechyNode',
     url: 'techy.ddns.net',
     port: 11898,
     ssl: false
   },
   {
-    id: 3,
+    id: 4,
     name: 'Privacy Mine',
     url: 'privacymine.net',
     port: 11898,
