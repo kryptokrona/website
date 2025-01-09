@@ -39,7 +39,7 @@ export const stableNodes: Node[] = [
     ssl: false
   },
   {
-    id: 4,
+    id: 5,
     name: 'XKR Network',
     url: 'node.xkr.network',
     port: 80,
