@@ -1,5 +1,5 @@
 import type { RequestHandler } from "./$types";
-import { VERCEL_TOKEN } from "$env/static/private";
+import { env } from "$env/dynamic/private";
 
 export const GET: RequestHandler = async ({ url }) => {
   const alias = url.searchParams.get('alias');
@@ -9,7 +9,7 @@ export const GET: RequestHandler = async ({ url }) => {
 
   try {
     const response = await fetch(`https://api.vercel.com/v2/domains/${domainId}/records`, {
-      headers: { Authorization: `Bearer ${VERCEL_TOKEN}` },
+      headers: { Authorization: `Bearer ${env.VERCEL_TOKEN}` },
     });
 
     if (!response.ok) {
