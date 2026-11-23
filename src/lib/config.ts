@@ -20,8 +20,8 @@ export const stableNodes: Node[] = [
   {
     id: 2,
     name: 'KTH Node',
-    url: 'kth.kryptokrona.se',
-    port: 20176,
+    url: 'kthnode2.vm-app.cloud.cbh.kth.se',
+    port: 443,
     ssl: true
   },
   {
